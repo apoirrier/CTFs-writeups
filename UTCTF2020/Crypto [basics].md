@@ -1,12 +1,16 @@
 # Crypto [basics]
 Cryptography
 
+## Description
+
 > Can you make it through all of the encodings?
 
 Attached is a file ```binary.txt```. In there there is binary code (the beginning of the file looks like this):
 ```
 01010101 01101000 00101101 01101111 01101000 00101100 00100000 01101100 01101111 01101111 01101011 01110011 00100000 01101100 01101001 01101011 01100101 00100000 
 ```
+
+## Solution
 
 This can be decoded thanks to this website: [https://www.asciitohex.com/](https://www.asciitohex.com/)
 ```
