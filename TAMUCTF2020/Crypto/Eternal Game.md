@@ -3,8 +3,11 @@
 ## Description
 
 > No one has ever won my game except me!
+>
+> nc challenges.tamuctf.com 8812
 
-We can connect to the game with netcat. The source code of the game is given:
+
+The source code of the game is given:
 ```python
 from collections import defaultdict
 import random
