@@ -9,7 +9,8 @@ A broken jpeg image is attached.
 
 ## Solution
 
-Just use ```strings``` on the image (it happens it is not at all an image but just a text file).
+Just use `strings` on the image (it happens it is not at all an image but just a text file).
+
 ![console](images/forensicsbasics.png)
 
-Flag: utflag{fil3_ext3nsi0ns_4r3nt_r34l}
+Flag: `utflag{fil3_ext3nsi0ns_4r3nt_r34l}`

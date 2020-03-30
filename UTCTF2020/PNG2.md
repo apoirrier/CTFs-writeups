@@ -12,9 +12,10 @@ Attached is a .png2 file.
 ## Solution
 
 Reading the hexdump of the file:
+
 ![hexdump](images/png2.png)
 
-We can see that this is a raw image of width=0x5cf and height=0x288. Using hexdump to extract raw data, this Python script recovers the file as a png:
+We can see that this is a raw image of `width = 0x5cf` and `height = 0x288`. Using `hexdump` to extract raw data, this Python script recovers the file as a png:
 
 ```python
 from PIL import Image
@@ -56,6 +57,7 @@ img = Image.fromarray(data, 'RGB')
 img.save('pic.png')
 ```
 This gives this image with the flag:
+
 ![flag](images/png22.png)
 
-Flag: utflag{j139adfo_93u12hfaj}
+Flag: `utflag{j139adfo_93u12hfaj}`

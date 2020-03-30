@@ -4,11 +4,12 @@
 
 > We must train the next generation of hackers.
 >
-> nc challenges.tamuctf.com 8573
+> `nc challenges.tamuctf.com 8573`
 
 ## Solution
 
 When we connect to the server, the following happens:
+
 ![rsapwn](../images/rsapwn.png)
 
 2 seconds is quite much for factorization, so a simple Python script should do the trick.
@@ -33,4 +34,4 @@ for i in range(3,n//2,2):
 sh.interactive()
 ```
 
-Flag: gigem{g00d_job_yOu_h4aaxx0rrR}
+Flag: `gigem{g00d_job_yOu_h4aaxx0rrR}`

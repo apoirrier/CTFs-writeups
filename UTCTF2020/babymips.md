@@ -10,6 +10,7 @@ Attached is a binary file
 ## Solution
 
 Using [Ghidra](https://ghidra-sre.org/) to reverse the binary file, we obtain the following code for main:
+
 ```c
 
 undefined4 main(void)
@@ -42,9 +43,10 @@ undefined4 main(void)
 }
 ```
 
-Meaning the flag is encoded in memory at address ```UNK_004015f4```, the main function asks the user to enter a string, and calls ```FUN_00401164``` with the first argument being the encoded flag and the second argument what the user entered.
+Meaning the flag is encoded in memory at address `UNK_004015f4`, the main function asks the user to enter a string, and calls `FUN_00401164` with the first argument being the encoded flag and the second argument what the user entered.
 
-Code for ```FUN_00401164```:
+Code for `FUN_00401164`:
+
 ```c
 void FUN_00401164(int param_1,
                  basic_string<char,std--char_traits<char>,std--allocator<char>> *param_2)
@@ -82,13 +84,16 @@ void FUN_00401164(int param_1,
 }
 ```
 
-The flag has size 0x4e = 78 characters, and the function prints correct only if for every character:
-```
+The flag has size `0x4e` = 78 characters, and the function prints correct only if for every character:
+
+```c
 userInput[i] XOR (i + 0x17) == encoded_flag[i]
 ```
+
 (by convention, the addition has higher priority then XOR).
 
 We can retrieve the encoded flag in the memory thanks to Ghidra, and then this Python scripts decodes the flag:
+
 ```python
 with open("secret.txt", "r") as f:
     j = 0
@@ -98,4 +103,5 @@ with open("secret.txt", "r") as f:
         print(chr(i), end="")
         j += 1
 ```
-Flag: utflag{mips_cpp_gang_5VDm:~`N]ze;\)5%vZ=C'C(r#$q=*efD"ZNY_GX>6&sn.wF8$v*mvA@'}
+
+Flag: ```utflag{mips_cpp_gang_5VDm:~`N]ze;\)5%vZ=C'C(r#$q=*efD"ZNY_GX>6&sn.wF8$v*mvA@'}```
