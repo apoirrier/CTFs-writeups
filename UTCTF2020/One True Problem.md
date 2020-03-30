@@ -29,7 +29,7 @@ P1: THE B wS+iR+Sul_8[&q
 P2: NO THE{C+tV_Gd6Z0
 ```
 
-Then by guessing the next characters in one plaintext, one is able to decrypt the other and guess the whole plaintexts. Here for example next character in `P2ù is probably a space. 
+Then by guessing the next characters in one plaintext, one is able to decrypt the other and guess the whole plaintexts. Here for example next character in `P2` is probably a space. 
 
 A small Python script to help decoding:
 

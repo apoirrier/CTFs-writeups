@@ -144,7 +144,7 @@ From the python script we understand easily what happens. The game rules are as 
 
 - begin with a score of `x = 1`
 - for each round, choose an integer between 2 and 10. Every integer can be chosen at most 5 times. Then the value `x` is multiplied by the chosen value.
-- when we want to end the game, the game give us a proof that we have reached the value `x` in the game.
+- when we want to end the game, the game gives us a proof that we have reached the value `x` in the game.
 - to get the flag, we need to input a value greater than `653086069891774904466108141306028536722619133804` and have a proof that we reached this state.
 
 We quickly discover that winning the game by playing by the rules is not possible, as `(10!)^5` is below the score to reach.
