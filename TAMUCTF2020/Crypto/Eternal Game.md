@@ -4,7 +4,7 @@
 
 > No one has ever won my game except me!
 >
-> nc challenges.tamuctf.com 8812
+> `nc challenges.tamuctf.com 8812`
 
 
 The source code of the game is given:
@@ -142,18 +142,19 @@ if __name__ == '__main__':
 
 From the python script we understand easily what happens. The game rules are as follow:
 
-- begin with a score of x = 1
-- for each round, choose an integer between 2 and 10. Every integer can be chosen at most 5 times. Then the value x is multiplied by the chosen value.
-- when we want to end the game, the game returns us a proof that we have reached the value x in the game.
-- to get the flag, we need to reach a value greater than 653086069891774904466108141306028536722619133804 (and have a proof that we reached this state).
+- begin with a score of `x = 1`
+- for each round, choose an integer between 2 and 10. Every integer can be chosen at most 5 times. Then the value `x` is multiplied by the chosen value.
+- when we want to end the game, the game gives us a proof that we have reached the value `x` in the game.
+- to get the flag, we need to input a value greater than `653086069891774904466108141306028536722619133804` and have a proof that we reached this state.
 
-We quickly discover that winning the game by playing by the rules is not possible, as (10!)^5 is below the score to reach.
+We quickly discover that winning the game by playing by the rules is not possible, as `(10!)^5` is below the score to reach.
 
-Moreover, we cannot cheat the game itself by inserting values outside the [2,10] range (or non integer values), as the program uses the ```extract_int``` function to read inputs. 
+Moreover, we cannot cheat the game itself by inserting values outside the [2,10] range (or non integer values), as the program uses the `extract_int` function to read inputs. 
 
 For some strange reason, their function is not well implemented, and it reads the string input from right to left constructing the corresponding integer until it reached a non numeral character (therefore we need to enter 01 for the game to understand 10).
 
 Therefore the way to cheat the game is to select a value, then forge a proof matching the entered number. Let's have a closer look at the proof function:
+
 ```python
 def prize():
     print 'Input the number you reached: '
@@ -177,11 +178,12 @@ def prize():
     sys.stdout.flush()
 ```
 
-So we enter a string ```num```, then a string ```proof```, and we get the flag if ```gen_hash(num) == proof```and ```extract_int(num) > high_score```.
+So we enter a string `num`, then a string `proof`, and we get the flag if `gen_hash(num) == proof` and `extract_int(num) > high_score`.
 
-Note that ```gen_hash(num)``` takes the raw input as input, and the integer is extracted after that. Therefore we need to choose a string ```s``` such that we can craft a corresponding proof for ```s``` and that ```extract_int(s) > high_score```.
+Note that `gen_hash(num)` takes the raw input as input, and the integer is extracted after that. Therefore we need to choose a string `s` such that we can craft a corresponding proof for `s` and that `extract_int(s) > high_score`.
 
-In order to craft a valid proof, we look more precisely at the ```gen_hash``` function:
+In order to craft a valid proof, we look more precisely at the `gen_hash` function:
+
 ```python
 def gen_hash(x):
     with open('key.txt', 'r') as f:
@@ -193,37 +195,39 @@ So the proof is created by appending our string to a secret key, and returning t
 
 ### Length extension attack
 
-The Merkle–Damgård construction works as follows. Given a compression function ```h```, taking as input a message block of size ```n``` and an input of size ```k```, it outputs a digest of size ```k```.
-- it takes as input a message m
-- it pads it to a correct number of bits which is a multiple of ```n```
+The Merkle–Damgård construction works as follows. Given a compression function `h`, taking as input a message block of size `n` and an input of size `k`, it outputs a digest of size `k`.
+- it takes as input a message `m`
+- it pads it to a correct number of bits which is a multiple of `n`
 - then it creates the hash using the algorithm described in the following picture. In words, it gives the previous output and the next message block to the compression function, and outputs the next output (first input for the compression function is a constant IV).
+
 ![Merkle–Damgård](../images/merkledamgard.png)
 
-In the special case of SHA512, n=1024 and k=512.
+In the special case of SHA512, `n = 1024` and `k = 512`.
 
-Now, if there is some unknown message ```m``` such that we know ```H(m)```, then we can iterate the construction (by adding blocks with the compression function, with H(m) as first input), in order to create a correct hash for message ```m || pad(m) || m'``` for any chosen message ```m'```.
+Now, if there is some unknown message `m` such that we know `H(m)`, then we can iterate the construction (by adding blocks with the compression function, with `H(m)` as first input), in order to create a correct hash for message `m || pad(m) || m'` for any chosen message `m'`.
 
 ### Back to the concrete attack
 
-Here in this case, we know the hash ```H(key || x)``` where x is a number we can reach in the game. For simplicity, let's take x=1.
+Here in this case, we know the hash ```H(key || x)``` where `x` is a number we can reach in the game. For simplicity, let's take `x = 1`.
 
-So the attack is to use length extension attack to create a valid hash ```H(key || x || pad(key || x) || y)```, which will be our proof for the string ```x || pad(key || x) || y```. If we choose y sufficiently large, then the ```extract_int``` function will extract a sufficiently large integer to get the flag.
+So the attack is to use length extension attack to create a valid hash `H(key || x || pad(key || x) || y)`, which will be our proof for the string `x || pad(key || x) || y`. If we choose `y` sufficiently large, then the `extract_int` function will extract a sufficiently large integer to get the flag.
 
-So we have x=1 and we choose y, so we can already craft a proof for our string.
+So we have `x = 1`  and we choose `y`, so we can already craft a proof for our string.
 
-But we need to be able to know ```pad(key || x)``` in order to build the actual string! The padding procedure for a message m works as follow:
-- encode |m| (the bit length of m) as a k bit integer.
-- append a bit 1 to m.
-- add a sufficient number of zeros between this bit 1 and the k-bit string encoding the length of the message, such that the result is a multiple of n (block length).
-Therefore ```pad(m) = 1 || 0..0 || len(m)``` with len(m) being k bits and the number of 0 enough to reach a multiple of n bits.
+But we need to be able to know `pad(key || x)` in order to build the actual string! The padding procedure for a message `m` works as follow:
+- encode `|m|` (the bit length of `m`) as a `k` bit integer.
+- append a bit `1` to `m`.
+- add a sufficient number of zeros between this bit `1` and the `k`-bit string encoding the length of the message, such that the result is a multiple of `n` (block length).
+Therefore `pad(m) = 1 || 0...0 || len(m)` with `len(m)` being `k` bits and the number of `0` enough to reach a multiple of `n` bits.
 
-For SHA512, k=128.
+For SHA512, `k = 128`.
 
-The problem is that in this case, ```m = key || 1```, but we do not know the length of key! Therefore we will bruteforce the length of the key, and the game will answer with "Don't play games with me. I told you you couldn't beat my high score, so why are you even trying?" if we don't get the length right (as the hash will be false).
+The problem is that in this case, `m = key || 1`, but we do not know the length of key! Therefore we will bruteforce the length of the key, and the game will answer with "Don't play games with me. I told you you couldn't beat my high score, so why are you even trying?" if we don't get the length right (as the hash will be false).
 
 ## Implementation of the attack
 
 We're using [hlextend](https://github.com/stephenbradshaw/hlextend) to carry out the length extension attack. The following code shows the attack.
+
 ```python
 import hlextend
 from pwn import *
@@ -277,4 +281,4 @@ for key_size in range(1, 100):
         break
 ```
 
-Flag: gigem{a11_uR_h4sH_rR_be10nG_to_m3Ee3}
+Flag: `gigem{a11_uR_h4sH_rR_be10nG_to_m3Ee3}`

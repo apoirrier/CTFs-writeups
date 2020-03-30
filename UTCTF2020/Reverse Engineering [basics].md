@@ -10,6 +10,7 @@ Attached is a binary file
 ## Solution
 
 Just use ```strings``` on the binary file.
+
 ![console](images/rebasics.png)
 
-Flag: utflag{str1ngs_1s_y0ur_fr13nd}
+Flag: `utflag{str1ngs_1s_y0ur_fr13nd}`

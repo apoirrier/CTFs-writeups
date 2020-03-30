@@ -10,9 +10,10 @@
 
 ## Solution
 
-Once we download the image, use strings on it.
+Once we download the image, use `strings` on it.
+
 ![alcapone](../images/alcapone.png)
 
-Flag: gigem{Ch4Nn3l_1nN3r_3Li0t_N3$$}
+Flag: `gigem{Ch4Nn3l_1nN3r_3Li0t_N3$$}`
 
-(Funny authors tried to prevent people from doing this by inserting a lot of "gigem" strings, but no "gigem{" string).
+(Funny authors tried to prevent people from doing this by inserting a lot of `gigem` strings, but no `gigem{` string).

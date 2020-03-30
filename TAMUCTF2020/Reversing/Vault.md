@@ -7,6 +7,7 @@ A binary is given
 ## Solution
 
 Let's reverse the code using [Ghidra](https://ghidra-sre.org/).
+
 ```c
 undefined8 main(void)
 {
@@ -35,10 +36,10 @@ undefined8 main(void)
 }
 ```
 
-So we have an hex string defined in ```__s1```, then it is deobfuscated with the deobfuscate method. Then we need to enter the deobfuscated string. Instead of trying to reverse the method, I can just use GDB to call the method, and show the string.
+So we have an hex string defined in `__s1`, then it is deobfuscated with the deobfuscate method. Then we need to enter the deobfuscated string. Instead of trying to reverse the method, I can just use GDB to call the method, and show the string.
 
 ![gdb](../images/vault.png)
 
-Launching GDB with ```gdb vault```, I disassemble the main function (```disas main```) and set a breakpoint after the deobfuscate function (```b* 0x...```). Then I run the program (```r```) and when the breakpoint is reached, I just show the content of ```__s1``` (which address is currently in the ```rax``` register): ```x/s $rax```.
+Launching GDB with `gdb vault`, I disassemble the main function (`disas main`) and set a breakpoint after the deobfuscate function (`b* 0x...`). Then I run the program (`r`) and when the breakpoint is reached, I just show the content of `__s1` (which address is currently in the `rax` register): `x/s $rax`.
 
-Flag: gigem{p455w0rd_1n_m3m0ry1}
+Flag: `gigem{p455w0rd_1n_m3m0ry1}`

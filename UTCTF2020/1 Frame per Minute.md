@@ -12,16 +12,16 @@ Thanks to the description and by listening to the file, I have recognised an [SS
 
 To retrieve it, I have used [MMSSTV](https://hamsoft.ca/pages/mmsstv.php) to decode it.
 
-MMSSTV only accepts .mmv input files. But .mmv files are just .wav files in mono with a frequency of 11.025 kHz. So I open [Audacity](https://www.audacityteam.org/) first to convert the .wav file.
+MMSSTV only accepts .mmv input files. But `.mmv` files are just `.wav` files in mono with a frequency of 11.025 kHz. So I open [Audacity](https://www.audacityteam.org/) first to convert the `.wav` file.
 
 ![audacity](images/oneframe.png)
 
-The important parameters are the sampling frequency to put to 11025 Hz, then change from stereo to mono (Tracks -> Mix -> Stereo to Mono).
+The important parameters are the sampling frequency to put to 11025 Hz, then change from stereo to mono (`Tracks` -> `Mix` -> `Stereo to Mono`).
 
-Then export as .wav file, and change the extension manually to .mmv. 
+Then export as `.wav` file, and change the extension manually to `.mmv`. 
 
-In MMSSTV, choose File -> Play sound from file, and wait for the image to appear (if it looks like garbage, go to the History tab).
+In MMSSTV, choose `File` -> `Play sound from file`, and wait for the image to appear (if it looks like garbage, go to the `History` tab).
 
 ![MMSSTV](images/oneframe2.png)
 
-Flag: utflag{6bdfeac1e2baa12d6ac5384cdfd166b0}
+Flag: `utflag{6bdfeac1e2baa12d6ac5384cdfd166b0}`
