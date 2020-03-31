@@ -56,4 +56,4 @@ while(True):
             break
 ```
 
-Flag: gigem{h0peYouScr1ptedTh1s}
+Flag: `gigem{h0peYouScr1ptedTh1s}`

@@ -2,7 +2,7 @@
 
 ## Description
 
-> nc challenges.tamuctf.com 4322
+> `nc challenges.tamuctf.com 4322`
 
 The binary is provided.
 
@@ -12,7 +12,9 @@ This challenge asks for a password, and checks it.
 
 ![AngrManagement](../images/angrmanagement.png)
 
-By reversing the code, we see that the password is sent to 32 functions which check if it is correct or not. Each function can be easily reversed, consists mainly of simple mathematical conditions on the password.
+By reversing the code, we see that the password is sent to 32 functions which check if it is correct or not. Each function can be easily reversed, consists mainly of simple mathematical conditions on the password. So as first function gives us the expectede length of the string, we can start with a 32 character string with all a, then mutate it when some verification fails.
+
+This method is clearly not the best one, it is quite long and time consuming, but in the end we managed to find correct constraints on our string.
 
 We use gdb to know at which function the verification fails:
 - `b *addr` sets a breakpoint at the label where the code jumps when verification has failed
