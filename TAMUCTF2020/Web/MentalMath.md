@@ -87,10 +87,14 @@ Injecting while the input is cast as an integer seems difficult, so we concentra
 First I try `true` and `True`. `true` returns an error 500, while `True` returns correct, so probably the backend is in Python.
 
 The injection we have found is the following:
+
 ```python
-ord(open("flag.txt","r").read()[0])
+{
+  problem: 'ord(open("flag.txt","r").read()[0])',
+  answer: 103
+}
 ```
 
-We check it, and it works! So there is a file `flag.txt` on the server. Moreover we can verify its first character is `g`. To continue the exploit, we have used the ZAP Proxy fuzzer, to bruteforce each character of the flag. This finally gives us the flag.
+We check it, and it works! So there is a file `flag.txt` on the server. Moreover we can verify its first character is `g` (by comparing with answer being 103, which is `g` in ascii). To continue the exploit, we have used the ZAP Proxy fuzzer, to bruteforce each character of the flag. This finally gives us the flag.
 
 Flag: `gigem{1_4m_g0od_47_m4tH3m4aatics_n07_s3cUr1ty_h3h3h3he}`
