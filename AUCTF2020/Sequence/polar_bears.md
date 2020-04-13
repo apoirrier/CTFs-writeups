@@ -12,6 +12,6 @@
 
 ## Solution
 
-Again Google identifies it as a sequence used in the show Lost.
+Google identifies it as a sequence used in the show Lost.
 
 Flag: `6, 23, 42`

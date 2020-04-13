@@ -10,9 +10,9 @@
 
 ## Solution
 
-On the sever, it lets us input a string then gives us an encoded string. If we give it `auctf` tge return string is empty. From there we understand that the encryption is a XOR.
+On the sever, it lets us input a string then gives us an encoded string. If we give it `auctf` the return string is empty. If we input `b`, it returns `\x01`. From there we understand that the encryption is a XOR.
 
-To solve it I give as input a string of `a`s, it gives me the encoded string `all_a_encoded`. I can then do a XOR betzeen this string and `a`s, character by character, which gives us the XOR key, `uctf{n3v3R_r3Us3_y0uR_0Tp_872vc8972}uctf{n3v3R_r3Us3_y` (missing the first `a`).
+To solve it I give as input a string of `a`s, it gives me the encoded string `all_a_encoded`. I can then do a XOR between this string and `a`s, character by character, which gives us the XOR key, `uctf{n3v3R_r3Us3_y0uR_0Tp_872vc8972}uctf{n3v3R_r3Us3_y` (missing the first `a`).
 
 ```python
 all_a_encoded = b'\x14\x02\x15\x07\x1a\x0fR\x17R3>\x13R4\x12R>\x18Q\x143>Q5\x11>YVS\x17\x02YXVS\x1c\x14\x02\x15\x07\x1a\x0fR\x17R3>\x13R4\x12R>\x18'
