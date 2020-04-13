@@ -22,8 +22,8 @@ var _0x44ff=['TWFrZSBhIEdFVCByZXF1ZXN0IHRvIC9oaWRkZW4vbmV4dHN0ZXAucGhw','aW5jbHV
 
 This is unreadable, but looking at the first line I see some string that look like base64. I decode the first one with https://www.asciitohex.com/, it gives `Make a GET request to /hidden/nextstep.php`.
 
-So I go to http://challenges.auctf.com:30022/hidden/nextstep.php, which doesn't give us much, simple html page. I look for the Network and look at the response header, and indeed there is the added header `ROT13: Znxr n CBFG erdhrfg gb /ncv/svany.cuc` (it can also be a different header with a different encoding). This is a ROT13, or caesar code. I give it to https://www.asciitohex.com/, and it says `Make a POST request to /api/final.php`.
+So I go to http://challenges.auctf.com:30022/hidden/nextstep.php, which doesn't give us much, simple html page. I look for Network tab in the Inspector and look at the response header, and indeed there is the added header `ROT13: Znxr n CBFG erdhrfg gb /ncv/svany.cuc` (it can also be a different header with a different encoding). This is a ROT13, or caesar code. I give it to https://www.asciitohex.com/, and it says `Make a POST request to /api/final.php`.
 
-I use Postmen to do this. The response says `Send a request with the flag variable set`. So I add a form-data body with name `flag` and no value, send the request and it gives the flag.
+I use Postman to do this. The response says `Send a request with the flag variable set`. So I add a form-data body with name `flag` and no value, send the request and it gives the flag.
 
 Flag: `auctf{1_w@s_laZ_w1t_dis_0N3}`

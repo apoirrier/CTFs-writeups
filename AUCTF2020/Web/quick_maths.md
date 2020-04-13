@@ -8,7 +8,7 @@
 
 ## Solution
 
-The website is an online calculation. We five it an expression and it gives us the answer. From this I deduce that a function `eval` is used. Since I can give it a string and reurns it to me, the input is not sanitized, and can be exploited.
+The website is an online calculator. We give it an expression and it gives us the answer. From this I deduce that a function `eval` is used. Since I can give it a string and returns it to me, the input is not sanitized, and can be exploited.
 
 ![calculator](../images/calculator.png)
 
