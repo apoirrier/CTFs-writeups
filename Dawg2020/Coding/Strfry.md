@@ -11,7 +11,7 @@
 Let's connect to the server.
 ![strfry](../images/strfry.png)
 
-The challenge is then to scramble the given strings (there are 30 of them) in order to get the flag. For every string, we have less than one second to enter the scrambled string, and only one try... Therefore we need to guess fast the scrambled string. Hopefully, the string to scramble remain the same across different runs.
+The challenge is then to scramble the given strings (there are 30 of them) in order to get the flag. For every string, we have less than one second to enter the scrambled string, and only one try... Therefore we need to guess fast the scrambled string. Fortunately, the strings to scramble remain the same across different runs and appear in the same order.
 
 From the challenge name and description, we know the strings are scrambled using `strfry`. From the [documentation](http://man7.org/linux/man-pages/man3/strfry.3.html):
 
@@ -52,7 +52,7 @@ strfry (char *string)
 }
 ```
 
-Here it is: the seed is `time(NULL) ^ getpid()`. Hopefully, the PID is given by the server (see image above). We only need to synchronize with the server's time. 
+Here it is: the seed is `time(NULL) ^ getpid()`. Fortunately, the PID is given by the server (see image above). We only need to synchronize with the server's time. 
 
 ### Synchronize with the server
 
