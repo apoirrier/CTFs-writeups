@@ -38,6 +38,9 @@ Here is a list to various useful tools for CTF competitions.
 - [Steg online](https://stylesuxx.github.io/steganography/#decode) for images
 - [Morse decoder](https://morsecode.world/international/decoder/audio-decoder-adaptive.html)
 - [MMSSTV](https://hamsoft.ca/pages/mmsstv.php) for HAM transmissions
+- [Digital Invisible Ink Toolkit](http://diit.sourceforge.net/) for images
+- [DeepSound](http://jpinsoft.net/DeepSound/Download.aspx) for sound files
+- [Raw Pixels](http://rawpixels.net/) an online RAW image viewer
 
 
 ## Cryptography
@@ -57,6 +60,7 @@ Here is a list to various useful tools for CTF competitions.
 
 - If you know the format of the flag, you can use `flag_converter.py` to quickly have the most common encoding of the flag, so you know what to look for during the competition ;)
 - https://www.asciitohex.com/  For quick conversion between ASCII, decimal, base64, binary, hexadecimal and URL
+- https://gchq.github.io/CyberChef/ Same as asciitohex but more complete, with magic wand.
 - https://upload.wikimedia.org/wikipedia/commons/d/dd/ASCII-Table.svg: An Ascci to decimal, hexadecimal, binary and octal table
 
 
