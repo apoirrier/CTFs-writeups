@@ -69,7 +69,7 @@ f(car1) - f(car2) = n(car1^3 - car2^3) -> Note that the modulus has disappeared 
 
 This number will only takes maximum (64 \* 8 + 24) \* 8^3 bits which is very small compared to 1024 for **N**.
 
-The idea is the comput the following function:
+The idea is to compute the following function:
 
 g(car, ct_i) =  (ct_i  - n^3 - car^9) \* 3^-1 \* car^-3
 we have g(car, ct_i) = f(car) if ct_i is the encryption of car. 
@@ -85,7 +85,7 @@ for car1 in all possible characters:
 	for car2 in all possible characters:
 		for ct_1 in ct:
 			for ct_2 in ct different from ct_1:
-				if g(car1, ct_1) - g(car2, ct_2) < ( 1 << (64 \* 8 + 24) \* 8^3  ):
+				if g(car1, ct_1) - g(car2, ct_2) < ( 1 << (64 * 8 + 24) * 8^3  ):
 					car1 is probably the character coded in ct_1
 					car2 is probably the character coded in ct_2
 ```
@@ -98,4 +98,4 @@ Flag: `shkCTF{L0NG_LIV3_N0ISY_RS4_b86040a760e25740477a498855be3c33}`
 
 ## Discussion
 
-I believe the creators of the problem had another solution in mind, because this one doesn't use the the operation << 24 on the noise. This operation has for consequence that the bits of **n** and **car^3** will be distinct.
+I believe the creators of the problem had another solution in mind, because this one doesn't use the the fact that n := m << 24 on the noise. This operation has for consequence that the bits of **n** and **car^3** will be distinct.
