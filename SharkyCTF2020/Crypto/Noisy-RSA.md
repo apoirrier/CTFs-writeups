@@ -61,6 +61,7 @@ Fortunately we also have access to  n^3 mod N  which is the first number in ct.
 The idea is to compute the following function, by inverting 3 and `car` modulus `N`:
 
 `f(car) := (encrypt(car)  - n^3 - car^9) * 3^-1 * car^-3 mod N` 
+
 `f(car)  = n(n + car^3) mod N`
 
 What is interesting is that if we take the difference of `f` of two characters, it is very small compared to `N`, if `car1 >= car2`:
