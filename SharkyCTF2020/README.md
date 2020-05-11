@@ -5,7 +5,7 @@ Writeup for various challenges of the [SharkyCTF](https://ctfd.sharkyctf.xyz/) 2
 Team: 
 - [apoirrier](https://github.com/apoirrier)
 - [Spyfox](https://github.com/leoHeidel)
-- DanyTheDog
+- [DanyTheDog](https://github.com/dhuynh95)
 - Gilto
 - Trisolaris
 
