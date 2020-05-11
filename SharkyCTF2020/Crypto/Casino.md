@@ -1,20 +1,18 @@
 # Casino
 
-## Description
-
 > Get rich.
 
-Attached is an APK file.
+## Description
 
-## Solution
-
-Let's fire [Android Studio](https://developer.android.com/studio) and take a look at the APK file. First I emulate it.
+We are given an APK file. I fire [Android Studio](https://developer.android.com/studio) and run the APK on an emulator.
 
 ![casino](../images/casino_app.png)
 
 There are 2 relevant tabs: one for training and one for getting the flag. On the training tab, we need to guess the next number, and as we see the first result the range is quite high.
 
-To get the flag, we actually need to guess the next 2 numbers.
+To get the flag, we need to guess the next 2 numbers.
+
+## Solution
 
 Let's dive into the dissassembled code (found on Android Studio by clicking on `classes.dex` and browsing the `com` folder). By displaying the bytecode, we see a few lines that catch our attention :
 
