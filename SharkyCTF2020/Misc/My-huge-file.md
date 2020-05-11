@@ -17,7 +17,7 @@ And we realise that the file is about 16 Tb.
 
 ### Investigation
 
-16 To is big for a file, and we can't expect every team to parse that much information in such a short time, without being a news: [record with 100 Tb for 23 minutes link](https://www.wired.com/2014/10/startup-crunches-100-terabytes-data-record-23-minutes/)
+16 Tb is big for a file, and we can't expect every team to parse that much information in such a short time, without being a news: [record with 100 Tb for 23 minutes link](https://www.wired.com/2014/10/startup-crunches-100-terabytes-data-record-23-minutes/)
 
 ```
 df --human-readable
@@ -40,5 +40,5 @@ My algorithm was simply to jump in the file with *lseek* read the next few bytes
 
 In the end, the bytes of the flag were scattered across the file.
 
-With a succession of jumps I was able to retrieave the flag. Unfortunately I didn't keep a copy of it to showcase, as all append on the remote machine. 
+With a succession of jumps I was able to retrieave the flag. Unfortunately I didn't keep a copy of it to showcase here, as all append on the remote machine. 
 
