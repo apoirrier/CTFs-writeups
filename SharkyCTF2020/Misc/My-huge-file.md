@@ -7,7 +7,7 @@
 
 In this challenge we had to connect to a remote machine trought SSH and find information in a huge file.
 
-Uppon connecting my fist reflex was:
+Upon connecting my first reflex was:
 ```
 ls -al --human-readable
 ```
@@ -40,5 +40,4 @@ My algorithm was simply to jump in the file with *lseek* read the next few bytes
 
 In the end, the bytes of the flag were scattered across the file.
 
-With a succession of jumps I was able to retrieave the flag. Unfortunately I didn't keep a copy of it to showcase here, as all append on the remote machine. 
-
+`Flag:shkCTF{sp4rs3_f1l3s_4r3_c001_6cf61f47f6273dfa225ee3366eacb8eb}`
