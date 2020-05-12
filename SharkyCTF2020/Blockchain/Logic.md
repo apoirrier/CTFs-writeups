@@ -1,4 +1,4 @@
-# Warmup
+# Logic
 
 ## Setup
 
@@ -8,7 +8,7 @@ Before starting, it is recommended to follow the suggested steps at http://ether
 
 ## Challenge
 
-The contract to attack is the following :
+The contract to attack is the following:
 
 ```solidity
 pragma solidity = 0.4.25;
@@ -66,3 +66,5 @@ contract Attack {
     }
 }
 ```
+
+Flag: `shkCTF{sh4m3_0n_y0u_l1ttl3_byt3_f0f6145540ea8c6ee8067c}`
