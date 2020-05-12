@@ -6,7 +6,7 @@ Team:
 - [apoirrier](https://github.com/apoirrier)
 - [Spyfox](https://github.com/leoHeidel)
 - [DanyTheDog](https://github.com/dhuynh95)
-- Gilto
+- [Gilto](https://github.com/GA86)
 - Trisolaris
 
 We finished 24th (out of 828 teams who solved at least one problem) with 5133 points.
