@@ -25,9 +25,9 @@ So the challenge is to understand how the id is created and deduce the flag post
 
 I guessed the timestamp would be included in the id, so I went to a [timestamp converter](https://www.unixtimestamp.com/index.php) and converted the dates of the confinement posts. Bingo, the first 8 characters correspond to the timestamp hex encoded.
 
-Then we have a constant string `d7b1600013655bb`, and only the last character changes. Here I think I overthought it, believing this constant string would be some hash of `confinement` and we would need to find a constant string for `flag`. But actually just putting the same constant string works.
+Then we have a constant string `d7b1600013655bb`, and only the last character changes. Here I overthought it. I believed this constant string would be some hash of `confinement` and consequently I was expecting to find another constant string for `flag`. Actually... just inputting the same constant string works.
 
-The last character I just bruteforce manually (only 16 possibilities).
+The last character I just bruteforced manually (only 16 possibilities).
 
 ![flag](../images/containment_flag.png)
 
