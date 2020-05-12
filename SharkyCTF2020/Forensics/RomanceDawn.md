@@ -14,8 +14,9 @@ ERROR: 7uffy.png
 
 If you are unaware of png files data structure, a rapid look at [this source](http://www.libpng.org/pub/png/spec/1.2/PNG-Chunks.html) tells you that there are four critical chunks in a png file (see below image).
 
-![](../images/png-chunks.png)
-
+<p align="center">	![](../images/png-chunks.png)
+<img src="../images/png-chunks.png" width="400">	
+</p>
 
 These critical chunks are: IHDR, PLTE, IDAT and IEND. There is a good chance that the file `EASY` chunks need to be corrected to one of them. So let's investigate which one of these chunks are already declared in the file. PLTE is mentionned as optionnal, however, we will check for it too as one is never too sure...
 
@@ -95,6 +96,8 @@ OK: 7uffy_fixed.png (1113x885, 32-bit RGB+alpha, non-interlaced, 99.3%).
 
 Great stuff... It looks like that we have corrected the file corruption. Let's open it.
 
-![](../images/7uffy_fixed.png)
+<p align="center">	![](../images/png-chunks.png)
+<img src="../images/png-chunks.png" width="400">	
+</p>
 
 やった！
