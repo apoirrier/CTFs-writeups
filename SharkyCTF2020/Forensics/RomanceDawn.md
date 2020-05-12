@@ -14,7 +14,7 @@ ERROR: 7uffy.png
 
 If you are unaware of png files data structure, a rapid look at [this source](http://www.libpng.org/pub/png/spec/1.2/PNG-Chunks.html) tells you that there are four critical chunks in a png file (see below image).
 
-<p align="center">	![](../images/png-chunks.png)
+<p align="center">
 <img src="../images/png-chunks.png" width="400">	
 </p>
 
@@ -96,8 +96,8 @@ OK: 7uffy_fixed.png (1113x885, 32-bit RGB+alpha, non-interlaced, 99.3%).
 
 Great stuff... It looks like that we have corrected the file corruption. Let's open it.
 
-<p align="center">	![](../images/png-chunks.png)
-<img src="../images/png-chunks.png" width="400">	
+<p align="center">
+<img src="../images/7uffy_fixed.png" width="400">	
 </p>
 
 やった！
