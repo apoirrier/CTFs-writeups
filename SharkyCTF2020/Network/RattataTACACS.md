@@ -38,15 +38,20 @@ There are two streams. Let's have a look in them. For that, we need to be able t
 
 Using [this website](https://www.ifm.net.nz/cookbooks/passwordcracker.html), we can crack the key and obtain the word of the image below.
 
-![](../images/cisco-password-cracking.png)
-
+<p align="center">	
+<img src="../images/cisco-password-cracking.png" width="400">	
+</p>
 
 Going then into Preferences > Protocols > TACACS+, we can set the encryption key as shown below.
 
-![](../images/setting-tacacs+-password.png)
+<p align="center">	
+<img src="../images/setting-tacacs+-password.png" width="400">	
+</p>
 
 And scrolling throught the TACACS+ frames, we see at the third one a flag as shown below.
 
-![](../images/derypted-request-TACACS+.png)
+<p align="center">	
+<img src="../images/derypted-request-TACACS+.png" width="1000">	
+</p>
 
 
