@@ -1,4 +1,4 @@
-# Warmup
+# Multipass
 
 ## Setup
 
@@ -8,7 +8,7 @@ Before starting, it is recommended to follow the suggested steps at http://ether
 
 ## Challenge
 
-The contract to attack is the following :
+The contract to attack is the following:
 
 ```solidity
 pragma solidity = 0.4.25;
@@ -69,7 +69,7 @@ In order to exploit it, we must have another contract with a fallback method whi
 
 To attack this contract, we will create another contract called Attack, which will be called to attack the first contract.
 
-In the same Solidity file, add the following code :
+In the same Solidity file, add the following code:
 
 ```solidity
 contract Attack {
