@@ -62,25 +62,27 @@ start_challenge()
 
 We have two different options:
 - generate a guest token
-- login as admin using a token.
+- login as admin using an admin token.
 
-Guest tokens are an AES-CBC mode encryption of `access=9999;expiry={expires_at}`. Admin token require to have `access=0000` in it. This is a very simple example of malleability of AES-CBC (for the first block).
+Guest tokens are an AES-CBC mode encryption of `access=9999;expiry={expires_at}`. A token is considered as an admin token if `access=0000` is present in its decryption. This is a very simple example of malleability of AES-CBC (for the first block).
 
-## Solution
-
-Let's recall how AES-CBC works: it selects a random IV (Initialization Vector), then uses AES as a block cipher to encrypt data:
+Let's recall how AES-CBC works: it selects a random IV (Initialization Vector), then uses AES as a block cipher to encrypt data. The plaintext is split into blocks (adding padding to get a multiple of the block length), and the ciphertext is generated as follows:
 
 ```
 c[i] = AES_Enc(c[i-1] XOR m[i])
 ```
 
-with `c[0]` being the IV. Then the output is `c` (including the IV). To decrypt, the operation is the reverse:
+with `c[0]` being the IV. The ciphertext is `c` (including the IV). The decryption formula is the following:
 
 ```
 m[i] = AES_Dec(c[i]) XOR c[i-1]
 ```
 
-and the IV is discarded. Therefore if we replace `IV` by `IV XOR D`, the corresponding first block of the plaintext will be decoded as `m[0] XOR D`. We can therefore XOR our IV with the corresponding values to change 9999 into 0000.
+and the IV is discarded. 
+
+## Solution
+
+If we replace `IV` by `IV XOR D`, the corresponding first block of the plaintext will be decoded as `m[0] XOR D`. We can therefore XOR our IV with the corresponding values to change 9999 into 0000. When the server will decrypt our ciphertext, it will read `access=0000`.
 
 ```python
 token = '606af8cd5c376066077ce589997aa89602a98905e123243aa4591a2291e4909e71cab0734fff1e71c21fee3f5e71a480'

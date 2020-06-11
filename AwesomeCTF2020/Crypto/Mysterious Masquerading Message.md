@@ -44,7 +44,7 @@ NDc0NmY2ZjcwNjU2ZTZjNmY2MzZiNzMKNjk2ZTY5NzQ2OTYxNmM2OTczNjE
 
 ## Description
 
-There seems to be a lot of classical ciphers/encryptions... We recognize binary at the end, base64 for th SSH key, maybe some Cesar code at the beginning.
+There seems to be a lot of classical ciphers/encodings... First message seems to be a Caesar cipher, the actual SSH key is probably base64 encoded data and in the end we spot binary encoding.
 
 
 ## Solution
@@ -66,9 +66,9 @@ Those seem to be hex encoded strings. Let's decrypt them using `From hex`:
 696e697469616c69736174696f6e3132 -> initialisation12
 ```
 
-Well, this looks like a key and an IV (so I think about AES-CBC).
+Well, this looks like a key and an IV (so there is probably an ARS-CBC encrypted message somewhere).
 
-Finally, the binary code is decrypted as (use From binary):
+Finally, the binary code is decrypted as (using From binary):
 
 ```
 90988c9befe5ea3f5a91effe03060a8714dfc20088415570b394ce9cd32be718
