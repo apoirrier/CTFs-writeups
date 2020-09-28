@@ -23,11 +23,13 @@ Here is a list to various useful tools for CTF competitions.
 - [OllyDbg](http://www.ollydbg.de/) a debugger for Windows programs
 - [Android studio](https://developer.android.com/studio) to edit and analyse APK files and emulate APK
 - [Apktool](https://ibotpeaches.github.io/Apktool/) for reversing APK files
+- [angr](https://angr.io/) for symbolic execution. See [writeup](DarkCTF2020/Reversing/JACK.md).
 
 ## PWN
 
 - [pwntools](http://docs.pwntools.com/en/stable/) a Python library for PWN
 - [ROPGadget](https://github.com/JonathanSalwan/ROPgadget) search for gadget and ROP chain generation
+- [lib search database](https://libc.blukat.me/) for ret2lib. See also [writeup 32 bits](DarkCTF2020/Pwn/newPaX.md) and [writeup 64 bits](DarkCTF2020/Pwn/roprop.md).
 
 ## Steganography
 
@@ -65,4 +67,18 @@ Here is a list to various useful tools for CTF competitions.
 
 
 
+# Writeups from other people
 
+This file holds some links to tasks I have failed in the past and whose writeup may be helpful later.
+
+## Pwn
+
+- Some task with Python bytecode: [Puffer Overflow](https://ctftime.org/task/11928)
+
+## Crypto
+
+- Ciphertexts with unknown but classical cipher: [Video](https://www.youtube.com/watch?v=9Q5Q1Nn5Vss)
+
+## Misc
+
+- Some task with an Arduino compiled binary: [A Flash of Inspiration](https://ctftime.org/task/11930)
