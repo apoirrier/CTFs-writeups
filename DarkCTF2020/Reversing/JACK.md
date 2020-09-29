@@ -8,7 +8,7 @@ Attached is a binary file.
 
 ## Description
 
-We reverse it with Ghidra.
+By executing the file, we are prompted to give a password. Let's dissassemble the binary with Ghidra to understand what is the password.
 
 ```c
 ulong main(void)
@@ -105,7 +105,7 @@ void check_flag(uint *param_1)
 }
 ```
 
-We need to enter a 16 character key, which undertakes quite a lot of complicated modifications before being compared to static values. This is a perfect exemple where symbolic execution will help to find the flag.
+After the `Enter your key` prompt, we understand from the code that we need to enter a 16 character key. Then this key undertakes quite a lot of complicated modifications, before being compared to static values. This is a perfect exemple where symbolic execution will help us to find the flag.
 
 ## Solution
 
@@ -132,5 +132,7 @@ print(simgr.found[0].posix.dumps(0))
 print(time.time() - t, "seconds")
 
 ```
+
+After 1.5s of waiting, we get back the following string: `n0_5ymb\xf0l1c,3x30`. The `\xf0` is not printable, but maybe another character is valid? It's probably an `0`, so I just run the program with `n0_5ymb0l1c,3x30` as input. It works, here is the flag.
 
 Flag: `darkCTF{n0_5ymb0l1c,3x30}`

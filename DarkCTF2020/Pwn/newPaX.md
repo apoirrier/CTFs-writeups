@@ -4,11 +4,11 @@
 >
 > nc pwn.darkarmy.xyz 5001
 
-Thie corresponding 32-bit binary is provided.
+The corresponding 32-bit binary is provided.
 
 ## Description
 
-By dissassembling it with Ghidra, we obtain the following vulnerable function:
+By dissassembling the binary with Ghidra, we obtain the following vulnerable function:
 
 ```c
 void vuln(void)
@@ -20,7 +20,7 @@ void vuln(void)
 }
 ```
 
-We have a nice buffer overflow available for us. Let's quickly check the security:
+This is an easy buffer overflow. Let's quickly check security:
 
 ![checksec](../images/newpax_checksec.png)
 
@@ -49,14 +49,14 @@ Therefore we know the jump address is to be placed instead of `3333`. We define 
 
 ### Disclose addresses of functions
 
-Next, we want to disclose the address of libc functions when loaded. This will allow us to find the library used in the first time, and then to call system in the second time.
+Next, we want to disclose the address of libc functions when loaded. This will first allow us to find the library used, and second to call system to open a shell.
 
-Here we are on a 32-bit system with parameters pushed on the stack, so we can put the addresses we want directly on the stack. Otherwise we would have to use a `POP RDI` gadget.
+Here we are on a 32-bit system. Functions parameters are pushed on the stack, so we can put the addresses we want directly on the stack.
 
 The exploit works as follow:
-- put the PLT address of the function we want to get on the stack
-- jump to printf function
-- jump back to vuln to try again.
+1) put the PLT address of the function we want to get on the stack
+2) jump to printf function
+3) jump back to vuln to try again.
 
 ```python
 elf = ELF(local_bin)
