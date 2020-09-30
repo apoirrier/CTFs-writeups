@@ -22,7 +22,7 @@ Now we observe images are called `flag_i_j.jpg` with `i,j` ranging between 0 and
 
 ## Solution
 
-First, we want to automatize the conversion from broken JPG to PNG. We de this with this Python function:
+First, we want to automatize the conversion from broken JPG to PNG. We do this with this Python function:
 
 ```python
 def modify_file(filename):
