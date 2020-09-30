@@ -43,12 +43,17 @@ Here is a list to various useful tools for CTF competitions.
 - [Digital Invisible Ink Toolkit](http://diit.sourceforge.net/) for images
 - [DeepSound](http://jpinsoft.net/DeepSound/Download.aspx) for sound files
 - [Raw Pixels](http://rawpixels.net/) an online RAW image viewer
+- [Hexed.it](https://hexed.it/) to edit the bytes of a file
+
+## Forensics
+- [Autopsy](https://www.autopsy.com/) for device analysis
 
 
 ## Cryptography
 
 - https://www.dcode.fr/en It knows a lot of common cypher methods and does automatic uncyphering
 - [hlextend](https://github.com/stephenbradshaw/hlextend) a Python library for length extension attacks on Merkle-Damgård hash functions
+- Factorize big integers with http://factordb.com/
 
 ## Password cracking
 
@@ -64,7 +69,7 @@ Here is a list to various useful tools for CTF competitions.
 - https://www.asciitohex.com/  For quick conversion between ASCII, decimal, base64, binary, hexadecimal and URL
 - https://gchq.github.io/CyberChef/ Same as asciitohex but more complete, with magic wand.
 - https://upload.wikimedia.org/wikipedia/commons/d/dd/ASCII-Table.svg: An Ascci to decimal, hexadecimal, binary and octal table
-
+- Deal with images in Python using [PIL](https://pillow.readthedocs.io/en/stable/). See [example writeup](DarkCTF2020/Misc/QuickFix.md)
 
 
 # Writeups from other people
@@ -78,7 +83,10 @@ This file holds some links to tasks I have failed in the past and whose writeup 
 ## Crypto
 
 - Ciphertexts with unknown but classical cipher: [Video](https://www.youtube.com/watch?v=9Q5Q1Nn5Vss)
+- Hill cipher solver: [Embrace the Climb](https://github.com/t3rmin0x/CTF-Writeups/tree/master/DarkCTF/Crypto/Embrace%20the%20Climb#embrace-the-climb-)
+
 
 ## Misc
 
 - Some task with an Arduino compiled binary: [A Flash of Inspiration](https://ctftime.org/task/11930)
+- Blockchain: [Bitcoin transaction vulnerability](https://github.com/t3rmin0x/CTF-Writeups/tree/master/DarkCTF/Crypto/Duplicacy%20Within#duplicacy-within)
