@@ -40,7 +40,7 @@ Les challenges de la plateforme de CTF sont les suivants:
 | Challenge | Points | Catégorie |
 |:-:|:-:|:-:|
 | Alone Musk | 100 | Pwn |
-| ASCII UART | 100 | Hardware |
+| [ASCII UART](ASCII_UART.md) | 100 | Hardware |
 | Automatos | 300 | Stegano |
 | ChatBot | 100 | Web |
 | Définition | 50 | Misc |
