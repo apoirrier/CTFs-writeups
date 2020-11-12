@@ -29,7 +29,7 @@ Nous sommes arrivés 10e de la compétition avec un total de 2600 points, en fin
 
 Le challenge est décomposé en 3 parties:
 - Échauffement: une première partie qui permet d'accéder au chat;
-- Chat: composé de quatre épreuves distinctes en cryptographie, web, algorithmique et forensics. Il suffit d'en résoudre une seule pour atteindre l'étape suivante;
+- Chat: composé de quatre épreuves distinctes en cryptographie, web, [algorithmique](algo.md) et forensics. Il suffit d'en résoudre une seule pour atteindre l'étape suivante;
 - la plateforme de CTF en elle-même. Une fois la plateforme atteinte, on peut enregistrer son équipe et gagner des points en réussissant les différents challenges.
 
 ![chat](images/chat.png)
