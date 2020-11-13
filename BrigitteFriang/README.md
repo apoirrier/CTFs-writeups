@@ -45,7 +45,7 @@ Les challenges de la plateforme de CTF sont les suivants:
 | ChatBot | 100 | Web |
 | Définition | 50 | Misc |
 | [Evil cipher](EvilCipher.md) | 400 | Hardware |
-| Keypad Sniffer | 150 | Hardware |
+| [Keypad Sniffer](KeypadSniffer.md) | 150 | Hardware |
 | [L'énigme de la crypte](Crypte.md) | 200 | Crypto |
 | Le discret Napier | 150 | Crypto |
 | Le Polyglotte | 150 | Stegano |
