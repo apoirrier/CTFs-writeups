@@ -8,7 +8,7 @@ L'image en question:
 
 ![image](resources/brigitte.png)
 
-Clairement un challenge parmi les plus durs du cTF, le pauvre agent qui a envoyé l'image serait probablement mort le temps qu'on trouve son message... Avec pour seul indice que le titre peut aider, deviner la méthode de stéganographie est difficile.
+Clairement un challenge parmi les plus durs du CTF, le pauvre agent qui a envoyé l'image serait probablement mort le temps qu'on trouve son message... Avec pour seul indice que le titre peut aider, deviner la méthode de stéganographie est difficile.
 
 ## Trouver la matrice
 
