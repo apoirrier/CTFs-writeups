@@ -32,7 +32,8 @@ with open("output.txt", "w") as f:
 
 Le fichier de sortie contient une chaîne de caractère débutant par `base64:`.
 
-Une fois de plus, nous convertissons cette chaîne de caractères en base 64 en utilisant CyberChef. Nous obtenons l'image suivante:
+[CyberChef](https://gchq.github.io/CyberChef/) permet de convertir la chaîne de caractères base 64.
+Nous obtenons l'image suivante:
 
 ![algo](images/algo_step1.jpg)
 
@@ -57,12 +58,12 @@ Malheureusement, ce problème a une complexité trop grande dans le cas généra
 Sachant que dans le grand testset nous avons N = 3000 et M = 2000000000, un algorithme général ne va pas convenir, et on doit trouver un moyen de résoudre le problème pour ce testset particulier.
 
 La solution que j'ai trouvée est la suivante:
-1) je trouve une approximation de la solution optimale avec un algorithme glouton. J'obtiens alors une valeur `W` et une partition de mes objets (sélectionnés ou non).
-2) puis j'essaie de trouver un objet sélectionné de valeur `x` et un objet non sélectionné de valeur `y` tel que `y - x = M - W`.
+1) je trouve une approximation de la solution optimale avec un algorithme glouton. J'obtiens alors une valeur `W` et une partition de mes objets (d'un côté les objets sélectionnés et de l'autre ceux laissés de côté).
+2) j'essaie de trouver un objet sélectionné de valeur `x` et un objet non sélectionné de valeur `y` tel que `y - x = M - W`.
 
-Cela fonctionne sur les deux plus gros testsets, et a donc une complexité linéaire `O(N)`.
+Cela fonctionne sur les deux plus gros testsets, ce qui donne une solution en deux parcours de tableau de taille `N`.
 
-Pour les deux plus petits testsets, j'utilise une programmation dynamique qui est de complexité acceptable pour la taille des testsets.
+Pour les deux plus petits testsets, j'utilise une programmation dynamique qui est de complexité acceptable au vu de la taille des petits testsets.
 
 L'algorithme greedy:
 
@@ -154,7 +155,7 @@ with open("sol_b.out", "w") as f:
         f.write(" ".format(i))
 ```
 
-Puis on upload les solutions, ce qui nous mène à l'adresse suivante.
+Puis j'upload les solutions, ce qui nous mène à l'adresse suivante.
 
 ![solved](images/algo_solved.png)
 
@@ -164,7 +165,7 @@ Le site web suivant est un blog qui contient de nombreux posts.
 
 ![newspaperwebsite](images/algo_newspaper.png)
 
-Comme décrit sur le site, la mission est de récupérer tous les posts, récupérer leur hash, concaténer le tout, le hasher et l'entrer sur le site. 
+Comme décrit sur le site, la mission est de récupérer tous les posts, extraire leur hash qui est inclus dans la page, concaténer puis hasher le tout et entrer le résultat sur le site. 
 
 Sur le docker à droite se trouvent des exemples de posts. En cliquant sur l'un d'eux, on découvre leur URL de la forme https://challengecybersec.fr/9bcb53d26eab7e9e08cc9ffae4396b48/blog/post/X avec X le numéro du post.
 
@@ -339,9 +340,11 @@ function _0x4bf1ad(_0x350d56) {
 }
 ```
 
-Ce qui nous intéresse est la première fonction, `_0x10dbec`. On veut qu'elle retourne 1, ce qui se passe lorsque l'entrée donnée passée à travers deux fonctions (`_0x53e54e` puis `_0x4bf1ad` donne la chaîne de caractère stockée dans `_0x1b7fa0`). Inversons ces deux fonctions.
+Ce qui nous intéresse est la première fonction, `_0x10dbec`. On veut qu'elle retourne 1, ce qui se passe lorsque l'entrée donnée passée à travers deux fonctions (`_0x53e54e` puis `_0x4bf1ad` donne la chaîne de caractère stockée dans `_0x1b7fa0`). 
 
-Pour plus de clarté, voici la fonction `_0x53e54e` où les variables sont renommées:
+Inversons ces deux fonctions.
+
+Pour plus de clarté, voici la fonction `_0x53e54e` où j'ai renommé les variables:
 
 ```js
 function _0x53e54e(input_str) {
