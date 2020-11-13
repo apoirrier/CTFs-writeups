@@ -6,19 +6,17 @@ Le challenge de cryptographie est introduit par Antoine Rossignol.
 
 Le fichier `echange.txt` est le suivant:
 
-```
-Antoine Rossignol 29/09/2020 : "Un des nos agents a intercepté du matériel de chiffrement et un message chiffré émis par Evil Chems qui doit contenir des informations capitales sur la livraison de produits chimiques."
-
-Agent 40 30/09/2020 : "OK, on s'occupe de démonter le matériel pour analyse."
-
-Agent 40 08/10/2020 : "C'est plus compliqué que prévu! Le processeur ne fait qu'échanger des données avec un circuit intégré dédié (ASIC). On suppose qu'il contient l'algorithme de chiffrement et que la clé y est stockée en dur."
-
-Antoine Rossignol 08/10/2020 : " Envoyez en urgence l'ASIC à Eve Descartes d'ESIEE-Paris pour une rétro-conception matérielle"
-
-Agent 40 12/10/2020 : "Eve Descartes a bien reçu le circuit. Elle s'en occupe en priorité."
-
-Antoine Rossignol 23/10/2020 : "Voici le compte-rendu d'Eve avec la cartographie de la zone étudiée. Il devient urgent de déchiffrer le message."
-```
+> Antoine Rossignol 29/09/2020 : "Un des nos agents a intercepté du matériel de chiffrement et un message chiffré émis par Evil Chems qui doit contenir des informations capitales sur la livraison de produits chimiques."
+>
+> Agent 40 30/09/2020 : "OK, on s'occupe de démonter le matériel pour analyse."
+>
+> Agent 40 08/10/2020 : "C'est plus compliqué que prévu! Le processeur ne fait qu'échanger des données avec un circuit intégré dédié (ASIC). On suppose qu'il contient l'algorithme de chiffrement et que la clé y est stockée en dur."
+>
+> Antoine Rossignol 08/10/2020 : " Envoyez en urgence l'ASIC à Eve Descartes d'ESIEE-Paris pour une rétro-conception matérielle"
+>
+> Agent 40 12/10/2020 : "Eve Descartes a bien reçu le circuit. Elle s'en occupe en priorité."
+>
+> Antoine Rossignol 23/10/2020 : "Voici le compte-rendu d'Eve avec la cartographie de la zone étudiée. Il devient urgent de déchiffrer le message."
 
 Le fichier `archive_chiffree` contient des données non exploitables actuellement.
 
@@ -44,13 +42,12 @@ On obtient effectivement 256 bits, avec un circuit ouvert représentant 0 et un 
 
 Malheureusement, Eve Descartes admet avoir deux incertitudes:
 
-```
-Mais n’ayant pas le temps d’analyser cette partie, nous ne pouvons vous assurer de l’ordre des bits et de la position du MSB.
-```
+> Mais n’ayant pas le temps d’analyser cette partie, nous ne pouvons vous assurer de l’ordre des bits et de la position du MSB.
+
 
 Cela signifie qu'elle ne sait pas dans quel sens lire les bits (vertical ou horizontal et sens de lecture) ni où se trouve le bit de poids fort (MSB), ie dans quel sens lire les bits.
 
-Cela ne donne que 8 possibilités, donc nous essayons les quatre grâce au script Python suivant:
+Cela ne donne que 8 possibilités, donc nous les essayons toutes grâce au script Python suivant:
 
 ```python
 from Crypto.Cipher import AES
