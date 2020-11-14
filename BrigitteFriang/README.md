@@ -51,7 +51,7 @@ Les challenges de la plateforme de CTF sont les suivants:
 | [Le Polyglotte](Polyglotte.md) | 150 | Stegano |
 | Sous l'océan | 50 | Forensics |
 | Steganosaurus | 400 | Forensics |
-| Stranger RSA | 200 | Crypto |
+| [Stranger RSA](Stranger.md) | 200 | Crypto |
 | VX Elliptique | 250 | Crypto |
 
 ![challenges](images/challenges.png)
