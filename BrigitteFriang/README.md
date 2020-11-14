@@ -43,7 +43,7 @@ Les challenges de la plateforme de CTF sont les suivants:
 | [ASCII UART](ASCII_UART.md) | 100 | Hardware |
 | [Automatos](Automatos.md) | 300 | Stegano |
 | ChatBot | 100 | Web |
-| Définition | 50 | Misc |
+| [Définition](Definition.md) | 50 | Misc |
 | [Evil cipher](EvilCipher.md) | 400 | Hardware |
 | [Keypad Sniffer](KeypadSniffer.md) | 150 | Hardware |
 | [L'énigme de la crypte](Crypte.md) | 200 | Crypto |
