@@ -47,7 +47,7 @@ Les challenges de la plateforme de CTF sont les suivants:
 | [Evil cipher](EvilCipher.md) | 400 | Hardware |
 | [Keypad Sniffer](KeypadSniffer.md) | 150 | Hardware |
 | [L'énigme de la crypte](Crypte.md) | 200 | Crypto |
-| Le discret Napier | 150 | Crypto |
+| [Le discret Napier](LeDiscretNapier.md) | 150 | Crypto |
 | [Le Polyglotte](Polyglotte.md) | 150 | Stegano |
 | [Sous l'océan](Ocean.md) | 50 | Forensics |
 | Steganosaurus | 400 | Forensics |
