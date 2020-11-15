@@ -52,6 +52,6 @@ Les challenges de la plateforme de CTF sont les suivants:
 | [Sous l'océan](Ocean.md) | 50 | Forensics |
 | Steganosaurus | 400 | Forensics |
 | [Stranger RSA](Stranger.md) | 200 | Crypto |
-| VX Elliptique | 250 | Crypto |
+| [VX Elliptique](VXElliptique.md) | 250 | Crypto |
 
 ![challenges](images/challenges.png)
