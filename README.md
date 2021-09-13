@@ -164,7 +164,7 @@ Writeups for various CTFs competitions
 
 ### JWT
 - [disable JWT signing](AwesomeCTF2020/Web/Quarantine.md)
-- [JWT with RS256 and weak RSA key](https://ctftime.org/writeup/30152)
+- [JWT with RS256 and weak RSA key](TMUCTF2021/Web/TheDevilNeverSleeps.md)
 
 ### RCE with SSTI
 
