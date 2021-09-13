@@ -18,6 +18,8 @@ We're using [CyberChef](https://gchq.github.io/CyberChef/) to decrypt the first 
 After those encodings, we are greeted with an RSA instance, which has the following particularities: `N` is much bigger than `c` and `e=3`.
 Therefore probably the `mod` part in the encryption scheme has not been used, and we can just compute the cube root of the ciphertext to retrieve the plaintext.
 
+Finally we need to perform a ROT13 on the string.
+
 We automate all this using Python:
 
 ```python
