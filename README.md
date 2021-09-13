@@ -33,6 +33,7 @@ Writeups for various CTFs competitions
 ### RSA
 - [RSA with ciphertext super small](CSAWQual2021/crypto/GottaDecryptThemAll.md)
 - [Attacks on RSA: Wiener, sexy primes, LSB oracle, partial private key leaked](CSAWQual2021/crypto/RSAPopQuiz.md)
+- [Multi-primes RSA](TMUCTF2021/Crypto/CommonFactor.md)
 
 ### Hashes
 - [Hash length extension attack](TAMUCTF2020/Crypto/Eternal%20Game.md)
