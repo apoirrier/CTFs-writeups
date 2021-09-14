@@ -29,6 +29,7 @@ Writeups for various CTFs competitions
 
 - [Malleability of the first block in AES-CBC](AwesomeCTF2020/Crypto/Access.md)
 - [Padding oracle attack on AES-CBC](SharkyCTF2020/Crypto/Backflip.md)
+- [IV recovery with partially known plaintext, ciphertext and key in AES-CBC](TMUCTF2021/Crypto/435!.md)
 
 ### RSA
 - [RSA with ciphertext super small](CSAWQual2021/crypto/GottaDecryptThemAll.md)
