@@ -64,6 +64,7 @@ Writeups for various CTFs competitions
 
 - [Broken JPEG header](AwesomeCTF2020/Forensics/CheapFacades.md)
 - [Broken PNG image](AwesomeCTF2020/Forensics/Dimensionless.md)
+- [Broken BMP header](PicoCTF/Forensics/tunn3l_v1s10n.md)
 - [Flag hidden in bit plane of image](Dawg2020/Forensics/UMBCShield.md)
 - [Image manipulation with PIL](TJCTF2020/Forensics/Unimportant.md)
 
