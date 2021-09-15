@@ -150,6 +150,7 @@ Writeups for various CTFs competitions
 
 - [Java decompiler](AUCTF2020/Reversing/MrGameAndWatch.md)
 - [Assembly reversing](AUCTF2020/Reversing/PlainJane.md)
+- [ARMv8 assembly reversing](PicoCTF/Reversing/ARMssembly0.md)
 - [Use angr to crack password](DarkCTF2020/Reversing/JACK.md)
 
 ## Web
