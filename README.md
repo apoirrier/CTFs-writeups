@@ -188,6 +188,10 @@ Writeups for various CTFs competitions
 
 - [Bypass nginx deny-all when nginx is a proxy before Gunicorn](https://ctf.zeyu2001.com/2021/csaw-ctf-qualification-round-2021/gatekeeping)
 
+### WASM
+
+- [Disassemble WASM](PicoCTF/Web/SomeAssemblyRequired1.md)
+
 # Tools for CTF
 Here is a list to various useful tools for CTF competitions.
 
