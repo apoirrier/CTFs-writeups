@@ -133,6 +133,10 @@ Writeups for various CTFs competitions
 
 - [Privilege escalation on Linux machine, exit rbash](BrigitteFriang/AloneMusk.md)
 
+### Heap exploitation
+
+- [Reallocate chosen freed block from tcache](https://github.com/Dvd848/CTFs/blob/master/2021_picoCTF/Cache_Me_Outside.md)
+
 
 ## Password cracking
 
@@ -203,7 +207,7 @@ Here is a list to various useful tools for CTF competitions.
 
 - [Ghidra](https://ghidra-sre.org/) to decompile `c` code.
 - [Java decompiler](http://www.javadecompilers.com/)
-- [gdb](https://www.gnu.org/software/gdb/) a C debugger
+- [gdb](https://www.gnu.org/software/gdb/) a C debugger and its additional functionalities [gef](https://gef.readthedocs.io/en/master/)
 - [OllyDbg](http://www.ollydbg.de/) a debugger for Windows programs
 - [Android studio](https://developer.android.com/studio) to edit and analyse APK files and emulate APK
 - [Apktool](https://ibotpeaches.github.io/Apktool/) for reversing APK files
@@ -212,6 +216,7 @@ Here is a list to various useful tools for CTF competitions.
 ## PWN
 
 - [pwntools](http://docs.pwntools.com/en/stable/) a Python library for PWN
+- [pwninit](https://github.com/io12/pwninit) for automatically starting pwn challenges.
 - [ROPGadget](https://github.com/JonathanSalwan/ROPgadget) search for gadget and ROP chain generation
 - [lib search database](https://libc.blukat.me/) for ret2lib. See also [writeup 32 bits](DarkCTF2020/Pwn/newPaX.md) and [writeup 64 bits](DarkCTF2020/Pwn/roprop.md).
 
