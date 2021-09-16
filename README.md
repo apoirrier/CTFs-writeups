@@ -77,6 +77,7 @@ Writeups for various CTFs competitions
 ### Network files
 
 - [Scapy to read pcap](CSAWQual2021/ics/APainInTheBacnet.md)
+- [Extract TFTP files](PicoCTF/Forensics/TrivialFlagTransferProtocol.md)
 
 ### Dump files
 
