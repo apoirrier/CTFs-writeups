@@ -187,6 +187,7 @@ Writeups for various CTFs competitions
 ### Proxy stuff
 
 - [Bypass nginx deny-all when nginx is a proxy before Gunicorn](https://ctf.zeyu2001.com/2021/csaw-ctf-qualification-round-2021/gatekeeping)
+- [Exploit SSRF to access intranet](https://www.notion.so/Write-Up-Op-ration-Brigitte-Friand-ChatBot-268b8b65b8c04c6184f5d8109767fe37)
 
 ### WASM
 
