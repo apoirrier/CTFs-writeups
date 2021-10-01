@@ -67,6 +67,7 @@ Writeups for various CTFs competitions
 - [Broken BMP header](PicoCTF/Forensics/tunn3l_v1s10n.md)
 - [Flag hidden in bit plane of image](Dawg2020/Forensics/UMBCShield.md)
 - [Image manipulation with PIL](TJCTF2020/Forensics/Unimportant.md)
+- [Hidden flag in PNG (zsteg)](https://github.com/xnomas/PicoCTF-2021-Writeups/tree/main/Milkslap)
 
 ### Audio
 
@@ -239,6 +240,7 @@ Here is a list to various useful tools for CTF competitions.
 - [DeepSound](http://jpinsoft.net/DeepSound/Download.aspx) for sound files
 - [Raw Pixels](http://rawpixels.net/) an online RAW image viewer
 - [Hexed.it](https://hexed.it/) to edit the bytes of a file
+- [zsteg](https://github.com/zed-0xff/zsteg) for images
 
 ## Forensics
 - [Autopsy](https://www.autopsy.com/) for device analysis
