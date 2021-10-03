@@ -25,6 +25,10 @@ Writeups for various CTFs competitions
 - [Lot of guessy ciphertexts without knowledge of cipher](https://www.youtube.com/watch?v=9Q5Q1Nn5Vss)
 - [Hill cipher](https://github.com/t3rmin0x/CTF-Writeups/tree/master/DarkCTF/Crypto/Embrace%20the%20Climb#embrace-the-climb-)
 
+### General crypto
+
+- [Double DES](PicoCTF/Crypto/DoubleDes.md)
+
 ### AES
 
 - [Malleability of the first block in AES-CBC](AwesomeCTF2020/Crypto/Access.md)
