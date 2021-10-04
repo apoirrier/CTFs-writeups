@@ -99,7 +99,10 @@ Writeups for various CTFs competitions
 - [Read sparse files](SharkyCTF2020/Misc/My-huge-file.md)
 - [Color hex values](TJCTF2020/Forensics/Hexillogy.md)
 
+## Games
 
+- [Cheat in WASM games](https://c-anirudh.github.io/posts/tjctf-gamerw-writeup/)
+- [Modify client of Godot scripts MMORPG game to cheat](https://mahaloz.re/tasteless-21-tasteless-shores/)
 
 ## Misc
 - [Bypass float comparison in Python](AwesomeCTF2020/Misc/Teleport.md)
@@ -271,3 +274,5 @@ Here is a list to various useful tools for CTF competitions.
 - https://gchq.github.io/CyberChef/ Same as asciitohex but more complete, with magic wand.
 - https://upload.wikimedia.org/wikipedia/commons/d/dd/ASCII-Table.svg: An Ascci to decimal, hexadecimal, binary and octal table
 - Deal with images in Python using [PIL](https://pillow.readthedocs.io/en/stable/). See [example writeup](DarkCTF2020/Misc/QuickFix.md)
+- Cheat in WASM games: [Cetus](https://github.com/Qwokka/Cetus)
+- [Decompiler for GDScripts](https://github.com/bruvzg/gdsdecomp)
