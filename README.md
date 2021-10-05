@@ -60,6 +60,7 @@ Writeups for various CTFs competitions
 
 - [Custom VHDL cipher on FPGA](BrigitteFriang/EvilCipher.md)
 - [Hardware AES key, CRT, Galois fields](BrigitteFriang/crypto.md)
+- [Encryption oracle with plaintext compressed](PicoCTF/Crypto/CompressAndAttack.md)
 
 
 ## Forensics
