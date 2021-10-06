@@ -173,6 +173,7 @@ Writeups for various CTFs competitions
 
 - [PHP injection with eval used](AUCTF2020/Web/quick_maths.md)
 - [Exploit javascript equality check to bypass hash collision](AwesomeCTF2020/Web/C0llide.md)
+- [PHP deserialize](https://github.com/skyf0l/CTF/blob/master/PicoCTF2021/README.md#super-serial)
 
 ### SQL attacks
 
