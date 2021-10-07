@@ -181,9 +181,10 @@ Writeups for various CTFs competitions
 - [Another blind SQLi](TAMUCTF2020/Web/Password_extraction.md)
 - [SQL union attack, weak new password procedure](BrigitteFriang/web.md)
 
-### JWT
+### Session tokens
 - [disable JWT signing](AwesomeCTF2020/Web/Quarantine.md)
 - [JWT with RS256 and weak RSA key](TMUCTF2021/Web/TheDevilNeverSleeps.md)
+- [Flask cookies](PicoCTF/Web/MostCookies.md)
 
 ### RCE with SSTI
 
@@ -218,6 +219,7 @@ Here is a list to various useful tools for CTF competitions.
 - [sqlmap](http://sqlmap.org/) for automatic SQL injection
 - [webhook](https://webhook.site/) for receiving requests. See [Internal Support](DGHack2020/Web/InternalSupport.md) for an example of XSS attack.
 - See [UpCredit](DGHack2020/Web/UpCredit.md) for an example of CSRF attack (without csrf token).
+- [flask-unsign](https://pypi.org/project/flask-unsign/) for decoding, cracking and forging Flask cookies.
 
 ## Reverse engineering
 
