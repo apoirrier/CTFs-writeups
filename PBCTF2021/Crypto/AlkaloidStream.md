@@ -92,24 +92,43 @@ print(public)
 
 ## Description
 
-Let's read the Python file.
+The Python file encrypts the flag with a stream cipher.
+Let's denote `ln` the number of bits in the flag.
+
+The file creates a keystream of `ln` bits, and the encryption of the flag is `xor(flag, keystream)`.
+While creating the keystream, it also creates some public data that we can use to recover the keystream.
+
+To get the flag, we thus need to understand how the keystream is created, then how we can recover it from the public data.
+
+## Understanding the keystream generation
+
+The keystream generation has several steps.
+
 First a key composed of `ln` linearly independent integers is created, where `ln` is the size of the flag.
+We denote each integer of the key `key[i]`.
 
-Then given the key, a set of fake key elements are created: for every key element at position `i`, the next `ln//3` key elements (if there are enough) are xored to create `fake[i]`.
+Then given the key, a set of `ln` fake keys are created: for all `i`, `fake[i]` is the XOR of keys `key[j]` for `i+1 <= j < min(ln, i + ln//3)`.
 
-Then the keystream is randomly chosen.
-The public data is formed as follows: if the `i`-th bit of the keystream is 1, then the `i`-th public information is `[fake[i], key[i]]` and `[key[i], fake[i]]` otherwise.
-However public information is shuffled so we don't have information on the key order.
+Then the keystream of `ln` bits is randomly chosen.
+The public data is formed as follows: if the `i`-th bit of the keystream is 1, then the `i`-th public information `public[i]` is `[fake[i], key[i]]` and `[key[i], fake[i]]` otherwise.
 
-As with stream ciphers, the ciphertext is the xor of the plaintext and the keystream.
+Finally, a permutation `pi` is randomly chosen, and the actual keystream used to encrypt the flag is `pi(keystream)` and we are given `pi(public)` as public information.
 
-What we observe is that for the last key element, there are no further key material. Therefore `fake[ln-1]` will necessarily be 0, and as key elements are linearly independent this is the only one.
+
+## Retrieving the keystream
+
+What we observe is that for the last key element, there are no further key material. Therefore `fake[ln-1]` will necessarily be 0.
+This is the only one value that can be 0.
+Indeed, keys are generated as linearly independent, so no key can be null and no linear combination of keys can be null.
 
 If we consider element `fake[ln-2]`, then it necessarily is equal to `key[ln-1]` which we have just found with the previous step.
 
-We can iterate this method to retrieve all elements of the key, and thus find the keystream. 
+We can iterate this method to retrieve all elements of the key, and thus find the keystream.
 
-## Solution
+Formally, given keys `key[i+1], ..., key[ln-1]`, we can compute `fake[i]` as in the `fake` generation as we know the following keys.
+We then search the fake value in the public data, and thanks to it we learn the value of `key[i]` as well as the keystream bit corresponding to this entry.
+
+## Full solution
 
 I'm reusing the functions given in the file.
 

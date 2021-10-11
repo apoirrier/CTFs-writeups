@@ -95,32 +95,45 @@ print(public)
 
 This challenge is similar to [Alkaloid Stream](AlkaloidStream.md) except that the `fake` values are computed differently.
 
-To summarize, given the flag having `ln` bits, the challenge has created `ln` linearly independent keys.
+To summarize, given the flag having `ln` bits, the challenge creates a keystream as follows:
+- generate `ln` independent integers of `ln` bits denoted `key[i]`.
+- for `i <= ln // 3`, compute `fake[i]` as the XOR of `ln//3` different keys randomly chosen in the set `[i+1, ln//3-1]`.
+- generate a random `keystream` of size `ln` and define `public[i] = (fake[i], key[i]) if keystream[i] else (key[i], fake[i])`.
+- choose a permutation `pi` and output the keystream `pi(keystream)` and public data `pi(public)`.
 
-Then for each `i` from 0 to `ln - ln//3`, `fake[i]` is created as the XOR of `ln//3` random different keys with index between `i+1` and `ln-1`.
-Also public data is shuffled before publishing.
-
-Thus the solution from the previous challenge does not work.
 
 ## Solution
 
 We still want the same goal: to distinguish for each `i` the key from the fake.
+Once we know the set of keys we can use the provided function `recover_keystream` to recover the keystream and decrypt the flag.
 
 First we know the last `ln//3` keys will have `fake[i] = 0`. So we have already found `ln//3` keys.
 
-Then we recall that fake values are linear combinations of  keys that happen next.
+We can then get a some sort of recurrence relation.
 
-So for instance, `fake[ln-ln//3-1]` will be the XOR of all `ln//3` keys that we have just found.
+Indeed, we recall that fake values are linear combinations of keys, while keys cannot be as they are all linearly independent.
+Therefore we have a way to differentiate them.
 
-`fake[ln-ln//3-2]` will be a combination of `ln//3` keys amongst the `ln//3 + 1` we have found.
+Formally, let's assume we know keys `key[i+1], ..., key[ln-1]`.
 
-And we can continue to iterate like this.
+Then for every possible value `v` in public couples, we can detect if `v` is a linear combination of the aforementioned keys.
+If it is a linear combination, then it is necessarily a fake value.
 
-As keys are all linearly independent, we have a differentiation criterium between keys and fakes: fakes will be linear combinations of other keys, but keys cannot be.
+Moreover, we know that `fake[i]` is a linear combination of those values.
+Thus there is at least one value that will match, and thus we have learned at least one new key to reiterate.
 
-However we won't be able to find them all in one go, as we don't know all the keys. But at each step we will learn at least one new key, and so we can iterate until we have found all the keys.
+### Detect if a value is a linear combination of others
 
-To do this, I have copied the following function from [Stackoverflow](https://stackoverflow.com/questions/56856378/fast-computation-of-matrix-rank-over-gf2), which given a matrix of boolean gives me its rank.
+Let `known_keys` be a set of keys known and let `k` be its cardinal.
+
+To detect if a value `v` is a linear combination of elements of `known_keys`, I put them all in a GF(2) matrix where the rows are the keys and last row is the element.
+
+If I don't put `v` in the matrix, I have a matrix of size `k * ln` with `k` independent rows.
+Therefore the matrix rank is `k`.
+
+If I now add the value as the `(k+1)`-th row, if it is a linear combination of the keys, the rank will still be `k`, otherwise it will be `k+1`.
+
+To compute matrix ranks, I have copied the following function from [Stackoverflow](https://stackoverflow.com/questions/56856378/fast-computation-of-matrix-rank-over-gf2), which given a matrix of boolean gives me its rank.
 
 ```python
 def gf2_rank(rows):
@@ -145,9 +158,7 @@ def gf2_rank(rows):
     return rank
 ```
 
-In my usage, I give matrices of size `ln * (k+1)` with `k` the total number of known keys, and the last row being the tested value `v`. If the rank is `k+1`, it means `v` is not a linear combination of the known keys, but if it is `k` then I have a linear combination meaning `v` is a fake value.
-
-Thus I can define my function to determine if `test_value` is a linear combination of the keys:
+Then I have defined my function to determine if `test_value` is a linear combination of the keys:
 
 ```python
 def is_linear_combination(keys, test_value):
@@ -157,7 +168,9 @@ def is_linear_combination(keys, test_value):
     return gf2_rank(rows) < n
 ```
 
-And finally the complete exploit, which reads data from the input file, extract the `ln//3` first keys and then performs the fake values search.
+### Full exploit
+
+The complete exploit reads data from the input file, extracts the `ln//3` first keys and then performs the fake values search.
 At the end, I recover the keystream with the function given in the original file and decrypt the flag.
 
 ```python
