@@ -55,6 +55,7 @@ Writeups for various CTFs competitions
 
 ### Bad randomness
 - [Retrieve state of java.util.Random PRNG](SharkyCTF2020/Crypto/Casino.md)
+- [Solve system of integer inequalities - java.util.Random calls](https://gist.github.com/myrdyr/c1b77f1cbd8e2acb117e74c7831ef876)
 
 ### Esoteric
 
@@ -79,6 +80,7 @@ Writeups for various CTFs competitions
 - [binwalk and flag hidden in spectrogram of audio file](AwesomeCTF2020/Forensics/MonsterIssue.md)
 - [UART](BrigitteFriang/ASCII_UART.md)
 - [SSTV](UTCTF2020/1%20Frame%20per%20Minute.md)
+- [Some signal analysis (Winlink)](https://gist.github.com/myrdyr/ea19eccd83c39e51f86bc9495c0c40ed)
 
 ### Network files
 
@@ -99,6 +101,7 @@ Writeups for various CTFs competitions
 - [Automating decompression with password cracking](HouseplantCTF2020/Misc/Zip.md)
 - [Read sparse files](SharkyCTF2020/Misc/My-huge-file.md)
 - [Color hex values](TJCTF2020/Forensics/Hexillogy.md)
+- [Sound keylogger](PBCTF2021/Misc/GhostWriter.md)
 
 ## Games
 
@@ -166,6 +169,7 @@ Writeups for various CTFs competitions
 - [Assembly reversing](AUCTF2020/Reversing/PlainJane.md)
 - [ARMv8 assembly reversing](PicoCTF/Reversing/ARMssembly0.md)
 - [Use angr to crack password](DarkCTF2020/Reversing/JACK.md)
+- [Portable executable compiled with Cosmopolitain](https://rainbowpigeon.me/posts/pbctf-2021/#cosmo)
 
 ## Web
 
@@ -255,13 +259,15 @@ Here is a list to various useful tools for CTF competitions.
 
 ## Forensics
 - [Autopsy](https://www.autopsy.com/) for device analysis
-
+- [Acoustic keylogger](https://github.com/shoyo/acoustic-keylogger)
 
 ## Cryptography
 
 - https://www.dcode.fr/en It knows a lot of common cypher methods and does automatic uncyphering
 - [hlextend](https://github.com/stephenbradshaw/hlextend) a Python library for length extension attacks on Merkle-Damgård hash functions
 - Factorize big integers with http://factordb.com/
+- Reverse seeds given inequality constraints for Java random: [JavaRandomReverser](https://github.com/mjtb49/LattiCG)
+- [Solve integer inequalities with CSP](https://github.com/rkm0959/Inequality_Solving_with_CVP)
 
 ## Password cracking
 
