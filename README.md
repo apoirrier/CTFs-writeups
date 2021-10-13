@@ -80,7 +80,7 @@ Writeups for various CTFs competitions
 - [binwalk and flag hidden in spectrogram of audio file](AwesomeCTF2020/Forensics/MonsterIssue.md)
 - [UART](BrigitteFriang/ASCII_UART.md)
 - [SSTV](UTCTF2020/1%20Frame%20per%20Minute.md)
-- [Some signal analysis (Winlink)](https://gist.github.com/myrdyr/ea19eccd83c39e51f86bc9495c0c40ed)
+- [Some signal analysis (Winlink)](https://github.com/tttttx2/CTF_Writeups/blob/main/PBCTF-2021/Is_that_your_packet.md)
 
 ### Network files
 
@@ -199,6 +199,7 @@ Writeups for various CTFs competitions
 - [Reflected XSS](DGHack2020/Web/InternalSupport.md)
 - [Reflected XSS with older version of browser (SameSite=None)](DGHack2020/Web/UpCredit.md)
 - [Bypass WAF for reflected XSS](TJCTF2020/Web/AdminSecrets.md)
+- [Use javascript: URL scheme to provoke XSS](https://bawolff.blogspot.com/2021/10/write-up-pbctf-2021-tbdxss.html)
 
 ### Proxy stuff
 
@@ -260,6 +261,7 @@ Here is a list to various useful tools for CTF competitions.
 ## Forensics
 - [Autopsy](https://www.autopsy.com/) for device analysis
 - [Acoustic keylogger](https://github.com/shoyo/acoustic-keylogger)
+- [Sigidwiki](https://www.sigidwiki.com/wiki/Signal_Identification_Guide) a signal identification guide
 
 ## Cryptography
 
