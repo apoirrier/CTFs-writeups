@@ -91,6 +91,7 @@ Writeups for various CTFs competitions
 
 - [Android dump position history](BrigitteFriang/Ocean.md)
 - [Arduino](https://ctftime.org/writeup/21344)
+- [Analyse dump file with volatility](https://github.com/l4u23n7p/dghack-2020/tree/main/bwing)
 
 ### Esoteric
 
@@ -170,25 +171,30 @@ Writeups for various CTFs competitions
 - [ARMv8 assembly reversing](PicoCTF/Reversing/ARMssembly0.md)
 - [Use angr to crack password](DarkCTF2020/Reversing/JACK.md)
 - [Portable executable compiled with Cosmopolitain](https://rainbowpigeon.me/posts/pbctf-2021/#cosmo)
+- [In-memory loading technique](https://www.aperikube.fr/docs/dghack_2020/dharma_exe/)
+- [Arduino Intel HEX format](https://www.aperikube.fr/docs/dghack_2020/strange_thing/)
 
 ## Web
 
-### PHP and JS simple vulnerabilities
+### Language vulnerabilities
 
 - [PHP injection with eval used](AUCTF2020/Web/quick_maths.md)
 - [Exploit javascript equality check to bypass hash collision](AwesomeCTF2020/Web/C0llide.md)
 - [PHP deserialize](https://github.com/skyf0l/CTF/blob/master/PicoCTF2021/README.md#super-serial)
+- [.Net core C# getters and setters exploits](https://dashboard.malice.fr/uploads/dghack/writeups/WriteUp_FlightControl.pdf)
 
 ### SQL attacks
 
 - [Blind SQLi, path transversal](AwesomeCTF2020/Web/Quarantine.md)
 - [Another blind SQLi](TAMUCTF2020/Web/Password_extraction.md)
 - [SQL union attack, weak new password procedure](BrigitteFriang/web.md)
+- [Blind SQLi: guessing tables and finding flag](https://nicolasb.fr/blog/writeup-dghack-stickitup/)
 
 ### Session tokens
 - [disable JWT signing](AwesomeCTF2020/Web/Quarantine.md)
 - [JWT with RS256 and weak RSA key](TMUCTF2021/Web/TheDevilNeverSleeps.md)
 - [Flask cookies](PicoCTF/Web/MostCookies.md)
+- [exploit redirect parameter in OAuth to steal access token](https://nicolasb.fr/blog/writeup-dghack-job-board/)
 
 ### RCE with SSTI
 
@@ -209,6 +215,11 @@ Writeups for various CTFs competitions
 ### WASM
 
 - [Disassemble WASM](PicoCTF/Web/SomeAssemblyRequired1.md)
+
+### CVE
+
+- [Apache CVE example](https://nicolasb.fr/blog/writeup-dghack-walters-blog/)
+- [Gitlab CVE example](https://github.com/l4u23n7p/dghack-2020/tree/main/gitbad)
 
 # Tools for CTF
 Here is a list to various useful tools for CTF competitions.
@@ -262,6 +273,7 @@ Here is a list to various useful tools for CTF competitions.
 - [Autopsy](https://www.autopsy.com/) for device analysis
 - [Acoustic keylogger](https://github.com/shoyo/acoustic-keylogger)
 - [Sigidwiki](https://www.sigidwiki.com/wiki/Signal_Identification_Guide) a signal identification guide
+- [volatility](https://github.com/volatilityfoundation/volatility)
 
 ## Cryptography
 
