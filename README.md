@@ -1,6 +1,20 @@
 # CTFs-writeups
-Writeups for various CTFs competitions
+Writeups for various CTFs competitions.
 
+On this page you can find links to writeups for the following categories:
+- [Blockchain](#blockchain)
+- [Cryptography](#cryptography)
+- [Forensics](#forensics)
+- [Cheating in games](#games)
+- [Miscellaneous](#misc)
+- [OSINT](#osint)
+- [Pwn](#pwn)
+- [Brute-forcing passwords](#password-cracking)
+- [Quantum cryptography](#quantum)
+- [Reverse engineering](#reversing)
+- [Web](#web)
+
+You can also find a [list of useful CTF tools](#tools-for-ctf).
 
 # Example of writeups
 
