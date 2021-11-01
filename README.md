@@ -141,6 +141,7 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 - [Simple buffer overflow](AUCTF2020/PWN/ThanksgivingDinner.md)
 - [32 bits ROP chain buffer overflow](AUCTF2020/PWN/HouseofMadness.md)
 - [NX disabled](TJCTF2020/Pwn/ElPrimo.md)
+- [Write shellcodes with restrictions](PicoCTF/Pwn/filtered-shellcode.md)
 
 ### Simple format string
 
@@ -267,6 +268,7 @@ Here is a list to various useful tools for CTF competitions.
 - [pwninit](https://github.com/io12/pwninit) for automatically starting pwn challenges.
 - [ROPGadget](https://github.com/JonathanSalwan/ROPgadget) search for gadget and ROP chain generation
 - [lib search database](https://libc.blukat.me/) for ret2lib. See also [writeup 32 bits](DarkCTF2020/Pwn/newPaX.md) and [writeup 64 bits](DarkCTF2020/Pwn/roprop.md).
+- [shellcodes](http://shell-storm.org/shellcode/)
 
 ## Steganography
 
