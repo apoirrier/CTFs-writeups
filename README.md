@@ -48,6 +48,7 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 - [Malleability of the first block in AES-CBC](AwesomeCTF2020/Crypto/Access.md)
 - [Padding oracle attack on AES-CBC](SharkyCTF2020/Crypto/Backflip.md)
 - [IV recovery with partially known plaintext, ciphertext and key in AES-CBC](TMUCTF2021/Crypto/435!.md)
+- [Exploiting predictable IV in AES-CBC](DGHack2021/Crypto/CBC.md)
 
 ### RSA
 - [RSA with ciphertext super small](CSAWQual2021/crypto/GottaDecryptThemAll.md)
@@ -76,6 +77,7 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 - [Custom VHDL cipher on FPGA](BrigitteFriang/EvilCipher.md)
 - [Hardware AES key, CRT, Galois fields](BrigitteFriang/crypto.md)
 - [Encryption oracle with plaintext compressed](PicoCTF/Crypto/CompressAndAttack.md)
+- [Example in RUST](DGHack2021/Crypto/Mascarade.md)
 
 
 ## Forensics
@@ -106,6 +108,7 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 - [Android dump position history](BrigitteFriang/Ocean.md)
 - [Arduino](https://ctftime.org/writeup/21344)
 - [Analyse dump file with volatility](https://github.com/l4u23n7p/dghack-2020/tree/main/bwing)
+- [Windows recurring task](DGHack2021/Inforensique/iDisk.md)
 
 ### Esoteric
 
@@ -117,6 +120,7 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 - [Read sparse files](SharkyCTF2020/Misc/My-huge-file.md)
 - [Color hex values](TJCTF2020/Forensics/Hexillogy.md)
 - [Sound keylogger](PBCTF2021/Misc/GhostWriter.md)
+- [Elastic search](DGHack2021/Détection/MEGACORP.md)
 
 ## Games
 
@@ -142,6 +146,7 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 - [32 bits ROP chain buffer overflow](AUCTF2020/PWN/HouseofMadness.md)
 - [NX disabled](TJCTF2020/Pwn/ElPrimo.md)
 - [Write shellcodes with restrictions](PicoCTF/Pwn/filtered-shellcode.md)
+- [Get a shell using dup2 and execv with ROP](DGHack2021/Exploit/SMTP.md)
 
 ### Simple format string
 
@@ -161,6 +166,7 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 ### Privilege escalation
 
 - [Privilege escalation on Linux machine, exit rbash](BrigitteFriang/AloneMusk.md)
+- [Open tty shell to exploit less for privilege escalation](DGHack2021/Exploit/SMTP.md)
 
 ### Heap exploitation
 
@@ -188,6 +194,10 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 - [Portable executable compiled with Cosmopolitain](https://rainbowpigeon.me/posts/pbctf-2021/#cosmo)
 - [In-memory loading technique](https://www.aperikube.fr/docs/dghack_2020/dharma_exe/)
 - [Arduino Intel HEX format](https://www.aperikube.fr/docs/dghack_2020/strange_thing/)
+- [Extract data from ELF](DGHack2021/Détection/YARA.md)
+- [Reverse OS launched with qemu](DGHack2021/Reverse/OSS117.md)
+- [Use gdb to debug child after fork](DGHack2021/Exploit/SMTP.md)
+- [vTable hook](https://www.aperikube.fr/docs/dghack_2021/introspection/)
 
 ## Web
 
