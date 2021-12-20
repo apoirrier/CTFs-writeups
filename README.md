@@ -207,6 +207,7 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 - [Exploit javascript equality check to bypass hash collision](AwesomeCTF2020/Web/C0llide.md)
 - [PHP deserialize](https://github.com/skyf0l/CTF/blob/master/PicoCTF2021/README.md#super-serial)
 - [.Net core C# getters and setters exploits](https://dashboard.malice.fr/uploads/dghack/writeups/WriteUp_FlightControl.pdf)
+- 
 
 ### SQL attacks
 
@@ -232,6 +233,10 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 - [Bypass WAF for reflected XSS](TJCTF2020/Web/AdminSecrets.md)
 - [Use javascript: URL scheme to provoke XSS](https://bawolff.blogspot.com/2021/10/write-up-pbctf-2021-tbdxss.html)
 
+### XXE
+
+- [Custom Wordpress vulnerability](https://mizu.re/post/xml-is-love-is-life)
+
 ### Proxy stuff
 
 - [Bypass nginx deny-all when nginx is a proxy before Gunicorn](https://ctf.zeyu2001.com/2021/csaw-ctf-qualification-round-2021/gatekeeping)
@@ -245,6 +250,8 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 
 - [Apache CVE example](https://nicolasb.fr/blog/writeup-dghack-walters-blog/)
 - [Gitlab CVE example](https://github.com/l4u23n7p/dghack-2020/tree/main/gitbad)
+- [Laravel (PHP) LFI leading to RCE due to CVE in dependency](https://writeup.wh1t3r0s3.xyz/web/instakilogram-200-points)
+
 
 # Tools for CTF
 Here is a list to various useful tools for CTF competitions.
