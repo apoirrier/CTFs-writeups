@@ -132,15 +132,15 @@ if __name__ == "__main__":
 
 ## Analysis
 
-The signature scheme is using polynomials in <img src="../images/gaston_zqzxn_dark.png?sanitize=true#gh-dark-mode-only" height=12px><img src="../images/gaston_zqzxn_light.png?sanitize=true#gh-dark-light-only" height=12px> (Q is a prime) represented as arrays.
+The signature scheme is using polynomials in <img src="../images/gaston_zqzxn_dark.png#gh-dark-mode-only" height=15px><img src="../images/gaston_zqzxn_light.png#gh-light-mode-only" height=15px> (Q is a prime) represented as arrays.
 
 Given a private key:
 
-<img src="../images/gaston_s1s2_dark.png?sanitize=true#gh-dark-mode-only" height=30px><img src="../images/gaston_s1s2_light.png?sanitize=true#gh-dark-light-only" height=30px>
+<img src="../images/gaston_s1s2_dark.png#gh-dark-mode-only" height=40px><img src="../images/gaston_s1s2_light.png#gh-light-mode-only" height=40px>
 
 the public key is defined as:
 
-<img src="../images/gaston_at_dark.png?sanitize=true#gh-dark-mode-only" height=30px><img src="../images/gaston_at_light.png?sanitize=true#gh-dark-light-only" height=30px>
+<img src="../images/gaston_at_dark.png#gh-dark-mode-only" height=40px><img src="../images/gaston_at_light.png#gh-light-mode-only" height=40px>
 
 The addition for polynomials is the standard addition, but the multiplication is a little bit different: the coefficient corresponding to degree `k` is the soustraction of the `k`-th usual coefficient for the multiplication with the `(k+N)`-th coefficient.
 
@@ -185,7 +185,7 @@ In this relation, `z1, c, y1` are known, which will give us the value of `s1`. A
 The difficult part is to retrieve `s1` from the relation `z1 = s1*c+y1`.
 Let's expand the computation from `s1*c`:
 
-<img src="../images/gaston_s1c_dark.png?sanitize=true#gh-dark-mode-only" height=60px><img src="../images/gaston_s1c_light.png?sanitize=true#gh-dark-light-only" height=60px>
+<img src="../images/gaston_s1c_dark.png#gh-dark-mode-only" height=80px><img src="../images/gaston_s1c_light.png#gh-light-mode-only" height=80px>
 
 We get the second line by performing a change of variable `k <- k-N` and by removing zero terms from the inner sum.
 
