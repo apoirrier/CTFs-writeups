@@ -20,5 +20,5 @@ Je suis arrivé 24e au classement général avec 6407 points.
 | Shuffled | 100 | Crypto |
 | My Tailor is Rich | 224 | Crypto |
 | Hash-ish | 336 | Crypto |
-| T-Rex | 344 | Crypto |
+| [T-Rex](Crypto/Trex.md) | 344 | Crypto |
 | [Gaston La Paffe](Crypto/Gaston.md) | 429 | Crypto |

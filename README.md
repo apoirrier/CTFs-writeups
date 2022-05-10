@@ -198,6 +198,7 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 - [Reverse OS launched with qemu](DGHack2021/Reverse/OSS117.md)
 - [Use gdb to debug child after fork](DGHack2021/Exploit/SMTP.md)
 - [vTable hook](https://www.aperikube.fr/docs/dghack_2021/introspection/)
+- [Example of reversing using OllyDbg and Ghidra](FCSC2022/Reverse/IconicLicense.md)
 
 ## Web
 
