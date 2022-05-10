@@ -57,6 +57,7 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 
 ### Hashes
 - [Hash length extension attack](TAMUCTF2020/Crypto/Eternal%20Game.md)
+- [Find a preimage for the Python hash function](FCSC2022/Crypto/Hashish.md)
 
 ### Cryptography in subgroups of Z or Z*
 
