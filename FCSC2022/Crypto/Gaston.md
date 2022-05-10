@@ -190,6 +190,7 @@ Let's expand the computation from `s1*c`:
 We get the second line by performing a change of variable `k <- k-N` and by removing zero terms from the inner sum.
 
 This is a system of `N` equations (one for every `k`) with N unknown variables (the `s_i`).
+We also know that the `c_i` are 0 or 1, so there is no modulo happening except for negative numbers, so we can just state that every value greater that `Q/2` is negative.
 
 So we can just inverse the matrix to solve the linear system and get the solution.
 
