@@ -17,7 +17,7 @@ Je suis arrivé 24e au classement général avec 6407 points.
 | Echec OP 2/3 | 141 | Forensics | 
 | Souk | 328 | Reverse | 
 | [Iconic License](Reverse/IconicLicense.md) | 454 | Reverse | 
-| Shuffled | 100 | Crypto |
+| [Shuffled](Crypto/Shuffled.md) | 100 | Crypto |
 | [My Tailor is Rich](Crypto/Tailor.md) | 224 | Crypto |
 | [Hash-ish](Crypto/Hashish.md) | 336 | Crypto |
 | [T-Rex](Crypto/Trex.md) | 344 | Crypto |
