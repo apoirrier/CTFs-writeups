@@ -122,6 +122,7 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 - [Color hex values](TJCTF2020/Forensics/Hexillogy.md)
 - [Sound keylogger](PBCTF2021/Misc/GhostWriter.md)
 - [Elastic search](DGHack2021/Détection/MEGACORP.md)
+- [EEPROM Arduino eletrical circuit VCD file](FCSC2022/Hardware/I2CYouToo.md)
 
 ## Games
 
@@ -132,6 +133,7 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 - [Bypass float comparison in Python](AwesomeCTF2020/Misc/Teleport.md)
 - [Read QR code with Python](HouseplantCTF2020/Web/QRGenerator.md)
 - [Python bytecode](https://ypl.coffee/ractf-2020-puffer-overflow/)
+- [Create Signal with a given frequency](FCSC2022/Hardware/MommyMorse.md)
 
 ## OSINT
 
