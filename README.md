@@ -36,6 +36,7 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 - [OTP reuse](UTCTF2020/One%20True%20Problem.md)
 - [Morse from audio](https://morsecode.world/international/decoder/audio-decoder-adaptive.html)
 - [Enigma](BrigitteFriang/Crypte.md)
+- [Enigma avec IC](404CTF2022/Crypto/Enigma.md)
 - [Lot of guessy ciphertexts without knowledge of cipher](https://www.youtube.com/watch?v=9Q5Q1Nn5Vss)
 - [Hill cipher](https://github.com/t3rmin0x/CTF-Writeups/tree/master/DarkCTF/Crypto/Embrace%20the%20Climb#embrace-the-climb-)
 
@@ -54,6 +55,7 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 - [RSA with ciphertext super small](CSAWQual2021/crypto/GottaDecryptThemAll.md)
 - [Attacks on RSA: Wiener, sexy primes, LSB oracle, partial private key leaked](CSAWQual2021/crypto/RSAPopQuiz.md)
 - [Multi-primes RSA](TMUCTF2021/Crypto/CommonFactor.md)
+- [Fixed point in RSA](404CTF2022/Crypto/UnPointCestTout.md)
 
 ### Hashes
 - [Hash length extension attack](TAMUCTF2020/Crypto/Eternal%20Game.md)
@@ -64,6 +66,7 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 - [DLP, order of N has small factors](BrigitteFriang/LeDiscretNapier.md)
 - [ElGamal signature scheme without hash existential forgery](CSAWQual2021/crypto/Forgery.md)
 - [Break DH key exchange with Pohlig-Hellman attack for DLP](TJCTF2020/Cryptography/DifficultDecryption.md)
+- [Oracle for finding secret exponent](404CTF2022/Crypto/DegatsCollateraux.md)
 
 ### Elliptic curves
 
@@ -183,6 +186,8 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 - [Custom List](AUCTF2020/Password_Cracking/Mental.md)
 - [KDBX](AUCTF2020/Password_Cracking/Manager.md)
 - [ZIP](AUCTF2020/Password_Cracking/Zippy.md)
+- [KDBX with key file](404CTF2022/Forensics/Ransomware3.md)
+- [Similar password](404CTF2022/Forensics/Ransomware3.md)
 
 ## Quantum
 
