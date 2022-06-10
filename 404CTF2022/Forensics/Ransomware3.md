@@ -1,4 +1,4 @@
-# Hackllebarde ransomware
+# Hackllebarde ransomware [3/4]
 
 > Alors que nous enquêtions sur ce ransomware, les agents de sécurité du batiment ont arrêté un individu suspect qui tentait de s'enfuir de notre complexe. Nous avons trouvé une clé USB sur lui, mais elle ne semble rien contenir d'intéressant, vous pouvez vérifier ?
 
