@@ -58,7 +58,7 @@ Je suis arrivé 6e (sur 2459) avec 49322 points.
 | Une lettre bien mystérieuse | 1000 | :x: |
 | Un RSA incassable | 100 | :white_check_mark: |
 | [Un Simple Oracle](Crypto/SimpleOracle.md) | 981 + 991 | :white_check_mark: |
-| Weak Signature | 994 | :white_check_mark: |
+| [Weak Signature](Crypto/WeakSignature.md) | 994 | :white_check_mark: |
 | [Un point c'est tout](Crypto/UnPointCestTout.md) | 1000 | :white_check_mark: |
 | La fonte des hashs | 979 | :white_check_mark: |
 | [Enigma](Crypto/Enigma.md) | 999 | :white_check_mark: |
