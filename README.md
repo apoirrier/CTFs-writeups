@@ -56,6 +56,7 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 - [Attacks on RSA: Wiener, sexy primes, LSB oracle, partial private key leaked](CSAWQual2021/crypto/RSAPopQuiz.md)
 - [Multi-primes RSA](TMUCTF2021/Crypto/CommonFactor.md)
 - [Fixed point in RSA](404CTF2022/Crypto/UnPointCestTout.md)
+- [RSA full oracle](404CTF2022/Crypto/SimpleOracle.md)
 
 ### Hashes
 - [Hash length extension attack](TAMUCTF2020/Crypto/Eternal%20Game.md)
