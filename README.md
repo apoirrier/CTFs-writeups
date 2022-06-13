@@ -50,6 +50,7 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 - [Padding oracle attack on AES-CBC](SharkyCTF2020/Crypto/Backflip.md)
 - [IV recovery with partially known plaintext, ciphertext and key in AES-CBC](TMUCTF2021/Crypto/435!.md)
 - [Exploiting predictable IV in AES-CBC](DGHack2021/Crypto/CBC.md)
+- [Differential Power Analysis on first round of AES](404CTF2022/Crypto/Kocher.md)
 
 ### RSA
 - [RSA with ciphertext super small](CSAWQual2021/crypto/GottaDecryptThemAll.md)

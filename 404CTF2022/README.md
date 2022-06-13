@@ -60,10 +60,10 @@ Je suis arrivé 6e (sur 2459) avec 49322 points.
 | [Un Simple Oracle](Crypto/SimpleOracle.md) | 981 + 991 | :white_check_mark: |
 | [Weak Signature](Crypto/WeakSignature.md) | 994 | :white_check_mark: |
 | [Un point c'est tout](Crypto/UnPointCestTout.md) | 1000 | :white_check_mark: |
-| La fonte des hashs | 979 | :white_check_mark: |
+| [La fonte des hashs](Crypto/FontedesHash.md) | 979 | :white_check_mark: |
 | [Enigma](Crypto/Enigma.md) | 999 | :white_check_mark: |
 | [Hackllebarde ransomware 4](Crypto/Ransomware4.md) | 1000 | :white_check_mark: |
-| Puisse Kocher être avec vous | 1000 | :white_check_mark: |
+| [Puisse Kocher être avec vous](Crypto/Kocher.md) | 1000 | :white_check_mark: |
 | [Dégâts collatéraux](Crypto/DegatsCollateraux.md) | 1000 | :white_check_mark: |
 
 ### Renseignement en sources ouvertes
