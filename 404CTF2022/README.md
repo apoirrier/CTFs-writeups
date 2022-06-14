@@ -115,5 +115,5 @@ Je suis arrivé 6e (sur 2459) avec 49322 points.
 | Épreuve | Points | Résolu |
 |:-------:|:------:|:------:|
 | Pense-bête | 100 | :white_check_mark: |
-| La guerre des contrats | 995+1000 | :white_check_mark: |
+| [La guerre des contrats](Web3/GuerreContrats.md) | 995+1000 | :white_check_mark: |
 | Clé publique | 997 | :white_check_mark: |

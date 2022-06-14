@@ -24,6 +24,7 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 
 - [Blockchain transactions are public (ETH)](SharkyCTF2020/Blockchain/Guessing.md)
 - [Reentrancy exploit](SharkyCTF2020/Blockchain/Multipass.md)
+- [Set up of environment, underflow and reentrancy](404CTF2022/Web3/GuerreContrats.md)
 
 ### Bitcoin
 
