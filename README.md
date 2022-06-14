@@ -226,6 +226,7 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 - [Another blind SQLi](TAMUCTF2020/Web/Password_extraction.md)
 - [SQL union attack, weak new password procedure](BrigitteFriang/web.md)
 - [Blind SQLi: guessing tables and finding flag](https://nicolasb.fr/blog/writeup-dghack-stickitup/)
+- [MySQL UNION attack with some filters](404CTF2022/Web/Braquage.md)
 
 ### Session tokens
 - [disable JWT signing](AwesomeCTF2020/Web/Quarantine.md)
