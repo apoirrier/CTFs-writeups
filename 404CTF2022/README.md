@@ -72,8 +72,8 @@ Je suis arrivé 6e (sur 2459) avec 49322 points.
 |:-------:|:------:|:------:|
 | Equipement désuet | 100 | :white_check_mark: |
 | [Collaborateur suspect](OSINT/Collaborateur.md) | 928 | :white_check_mark: |
-| A l'aube d'un échange | 549 | :white_check_mark: |
-| Nous sommes infiltrés ! | 862 | :white_check_mark: |
+| [A l'aube d'un échange](OSINT/Aube.md) | 549 | :white_check_mark: |
+| [Nous sommes infiltrés !](OSINT/Infiltres.md) | 862 | :white_check_mark: |
 | Nom d'une nouvelle recrue ! | 987 | :x: |
 
 ### Programmation
