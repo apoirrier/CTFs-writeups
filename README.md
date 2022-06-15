@@ -147,6 +147,7 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 - [Github older commit](AUCTF2020/OSINT/WhoMadeMe.md)
 - [Old version of pip library](AwesomeCTF2020/Misc/Spentalkux.md)
 - [Find password of an employee in social network](Dawg2020/Forensics/ImpossiblePenTest.md)
+- [Old version of website](404CTF2022/OSINT/Collaborateur.md)
 
 ## PWN
 
@@ -337,6 +338,8 @@ Here is a list to various useful tools for CTF competitions.
 ## OSINT
 
 - [Sherlock](https://github.com/sherlock-project/sherlock) to scrap information on social media
+- [Wayback Machine](https://web.archive.org/)
+- [Webpage archive](https://archive.today/)
 
 ## Misc
 
