@@ -38,7 +38,7 @@ Je suis arrivé 6e (sur 2459) avec 49322 points.
 | Épreuve | Points | Résolu |
 |:-------:|:------:|:------:|
 | La plume à la main | 100 | :white_check_mark: |
-| PNG | 359 + 931 + 991 + 1000 | :white_check_mark: |
+| [PNG](Stegano/PNG.md) | 359 + 931 + 991 + 1000 | :white_check_mark: |
 | Stéréographie | 996 | :white_check_mark: |
 | La méthode française | 1000 | :x: |
 
