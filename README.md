@@ -105,6 +105,7 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 - [UART](BrigitteFriang/ASCII_UART.md)
 - [SSTV](UTCTF2020/1%20Frame%20per%20Minute.md)
 - [Some signal analysis (Winlink)](https://github.com/tttttx2/CTF_Writeups/blob/main/PBCTF-2021/Is_that_your_packet.md)
+- [WAV file is an oscilloscope input](404CTF2022/Stegano/Stereographie.md)
 
 ### Network files
 
