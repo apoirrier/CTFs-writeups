@@ -90,9 +90,9 @@ Je suis arrivé 6e (sur 2459) avec 49322 points.
 | Épreuve | Points | Résolu |
 |:-------:|:------:|:------:|
 | Trop facile | 100 | :white_check_mark: |
-| Sans protection | 977 | :white_check_mark: |
-| Cache-cache | 989 | :white_check_mark: |
-| Patchwork | 995 | :white_check_mark: |
+| [Sans protection](Pwn/SansProtection.md) | 977 | :white_check_mark: |
+| [Cache-cache](Pwn/CacheCache.md) | 989 | :white_check_mark: |
+| [Patchwork](Pwn/Patchwork.md) | 995 | :white_check_mark: |
 | Coffre-fort | 1000 | :x: |
 | Changement d'architecture 2 | 1000 | :x: |
 
