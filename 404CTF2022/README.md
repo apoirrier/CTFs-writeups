@@ -17,7 +17,7 @@ Je suis arrivé 6e (sur 2459) avec 49322 points.
 | Un agent compromis | 867 + 919 + 989 | :white_check_mark: |
 | [SOS RAID](Forensics/RAID.md) | 960 + 981 | :white_check_mark: |
 | Hackllebarde ransomware 1 | 968 | :white_check_mark: |
-| Hackllebarde ransomware 2 | 997 | :white_check_mark: |
+| [Hackllebarde ransomware 2](Forensics/Ransomware2.md) | 997 | :white_check_mark: |
 | [Hackllebarde ransomware 3](Forensics/Ransomware3.md) | 1000 | :white_check_mark: |
 
 ### Rétro-ingénierie
