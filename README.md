@@ -184,6 +184,10 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 
 - [Reallocate chosen freed block from tcache](https://github.com/Dvd848/CTFs/blob/master/2021_picoCTF/Cache_Me_Outside.md)
 
+### Python
+
+- [Python 2 input](https://intx0x80.blogspot.com/2017/05/python-input-vulnerability_25.html)
+- [Python string equal bypass before int](https://www.compart.com/en/unicode/search?q=zero#characters)
 
 ## Password cracking
 
