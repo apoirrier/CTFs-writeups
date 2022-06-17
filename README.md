@@ -118,6 +118,7 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 - [Arduino](https://ctftime.org/writeup/21344)
 - [Analyse dump file with volatility](https://github.com/l4u23n7p/dghack-2020/tree/main/bwing)
 - [Windows recurring task](DGHack2021/Inforensique/iDisk.md)
+- [Repair RAID files](404CTF2022/Forensics/RAID.md)
 
 ### Esoteric
 
