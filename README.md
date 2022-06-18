@@ -176,6 +176,12 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 - [64 bit ret2lib with buffer overflow](DarkCTF2020/Pwn/roprop.md)
 - [ret2lib with ASLR and PIE with only format string vulnerabilities](https://github.com/KrauseBerg/CTF-writeups-1/blob/patch-1/CSAW%602021/procrastination.py)
 
+### File Struct Oriented Programming
+
+- [FSOP par heap overflow](https://remyoudompheng.github.io/ctf/404ctf/chgarchi2.html)
+- [Guide FSOP](https://faraz.faith/2020-10-13-FSOP-lazynote/)
+- [Autre guide](https://gsec.hitb.org/materials/sg2018/D1%20-%20FILE%20Structures%20-%20Another%20Binary%20Exploitation%20Technique%20-%20An-Jie%20Yang.pdf)
+
 ### Break PRNG
 
 - [Guess randomness of rand with srand(time)](CSAWQual2021/pwn/haySTACK.md)
