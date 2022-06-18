@@ -107,6 +107,10 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 - [Some signal analysis (Winlink)](https://github.com/tttttx2/CTF_Writeups/blob/main/PBCTF-2021/Is_that_your_packet.md)
 - [WAV file is an oscilloscope input](404CTF2022/Stegano/Stereographie.md)
 
+### PDF
+
+- [PDF recover streams and CMap](404CTF2022/Forensics/AgentCompromis.md#partie-3)
+
 ### Network files
 
 - [Scapy to read pcap](CSAWQual2021/ics/APainInTheBacnet.md)
