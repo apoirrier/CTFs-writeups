@@ -222,6 +222,7 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 - [Use gdb to debug child after fork](DGHack2021/Exploit/SMTP.md)
 - [vTable hook](https://www.aperikube.fr/docs/dghack_2021/introspection/)
 - [Example of reversing using OllyDbg and Ghidra](FCSC2022/Reverse/IconicLicense.md)
+- [PYC reverse](404CTF2022/Reverse/Tour.md#partie-2)
 
 ## Web
 

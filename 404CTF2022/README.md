@@ -24,7 +24,7 @@ Je suis arrivé 6e (sur 2459) avec 49322 points.
 
 | Épreuve | Points | Résolu |
 |:-------:|:------:|:------:|
-| Renverse la tour | 866 + 982 | :white_check_mark: |
+| [Renverse la tour](Reverse/Tour.md) | 866 + 982 | :white_check_mark: |
 | Mise à jour requise | 978 | :white_check_mark: |
 | Mot de passe | 100 | :white_check_mark: |
 | Changement d'architecture 1 | 1000 | :white_check_mark: |
