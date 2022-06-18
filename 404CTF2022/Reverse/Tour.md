@@ -93,11 +93,11 @@ Flag: `404CTF{P4sS1R0bUst3Qu3C4}`.
 >
 > Attention, nous ne sommes pas sûr que ce fichier soit exactement ce qu'il semble être.
 
-On nous donne un fichier `.asm`, mais comme l'indique l'énoncé, il ne s'agit pas d'un fichier ASM. On effectue `file reverse2.asm` et on se rend compte qu'il s'agit en fait d'un fichier ASCII. En le lisant, on voit que c'est du python compilé (`.pyc`).
+On nous donne un fichier `.asm`, mais comme l'indique l'énoncé, il ne s'agit pas d'un fichier ASM. On effectue `file reverse2.asm` et on se rend compte qu'il s'agit en fait d'un fichier ASCII. En le lisant, on voit que c'est du python bytecode.
 
-De ce que je comprends, le `pyc` utilise 2 stacks: une pour la donnée et une pour les fonctions.
+De ce que je comprends, le python bytecode utilise 2 stacks: une pour la donnée et une pour les fonctions.
 
-Je vais donc inverser partie par partie le pyc.
+Je vais donc inverser partie par partie.
 
 ### Ligne 3
 
