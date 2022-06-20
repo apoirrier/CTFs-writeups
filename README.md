@@ -125,9 +125,15 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 - [Windows recurring task](DGHack2021/Inforensique/iDisk.md)
 - [Repair RAID files](404CTF2022/Forensics/RAID.md)
 
-### Esoteric
+### Signal in a wire
 
 - [Keypad sniffer](BrigitteFriang/KeypadSniffer.md)
+- [EEPROM Arduino eletrical circuit VCD file](FCSC2022/Hardware/I2CYouToo.md)
+- [8b10b](404CTF2022/Misc/8vers10.md)
+- [Non Return to Zero Inverted](404CTF2022/Misc/Cable.md)
+
+### Esoteric
+
 - [Polyglotte files](BrigitteFriang/Polyglotte.md)
 - [Hidden flag in RSA parameter](BrigitteFriang/Stranger.md)
 - [Detect falsified data with Benford's law](Dawg2020/Forensics/benford_law_firm.md)
@@ -136,7 +142,7 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 - [Color hex values](TJCTF2020/Forensics/Hexillogy.md)
 - [Sound keylogger](PBCTF2021/Misc/GhostWriter.md)
 - [Elastic search](DGHack2021/Détection/MEGACORP.md)
-- [EEPROM Arduino eletrical circuit VCD file](FCSC2022/Hardware/I2CYouToo.md)
+
 
 ## Games
 
