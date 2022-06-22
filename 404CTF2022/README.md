@@ -105,7 +105,7 @@ Je suis arrivé 6e (sur 2459) avec 49322 points.
 | Je suis une théière | 899 | :white_check_mark: |
 | [Par câble](Misc/Cable.md) | 984 | :white_check_mark: |
 | Gogolfplex | 990 | :white_check_mark: |
-| Un utilisateur suspicieux | 981 + 986 | :white_check_mark: |
+| [Un utilisateur suspicieux](Misc/Suspicieux.md) | 981 + 986 | :white_check_mark: |
 | [8 vers 10](Misc/8vers10.md) | 999 | :white_check_mark: |
 | Joutes, arches, vallées & arbalètes | 1000 | :x: |
 
