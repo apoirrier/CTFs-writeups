@@ -80,7 +80,7 @@ Je suis arrivé 6e (sur 2459) avec 49322 points.
 | Épreuve | Points | Résolu |
 |:-------:|:------:|:------:|
 | Compression | 100 | :white_check_mark: |
-| Découpé | 791 | :white_check_mark: |
+| [Découpé](Programmation/Decoupe.md) | 791 | :white_check_mark: |
 | [128code128](Programmation/128code128.md) | 977 | :white_check_mark: |
 | [Données corrompues](Programmation/DonneesCorrompues.md) | 983 | :white_check_mark: |
 
