@@ -209,6 +209,10 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 - [Python 2 input](https://intx0x80.blogspot.com/2017/05/python-input-vulnerability_25.html)
 - [Python string equal bypass before int](https://www.compart.com/en/unicode/search?q=zero#characters)
 
+### Java
+
+- [log4shell](https://github.com/pasterp/CTF_WriteUps/blob/main/2022/404CTF/misc/joutes_arches_vallees_arbaletes.md)
+
 ## Password cracking
 
 - [Simple john](AUCTF2020/Password_Cracking/Crackme.md)
