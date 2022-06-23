@@ -229,20 +229,40 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 
 ## Reversing
 
+### Java and Android
+
 - [Java decompiler](AUCTF2020/Reversing/MrGameAndWatch.md)
-- [Assembly reversing](AUCTF2020/Reversing/PlainJane.md)
-- [ARMv8 assembly reversing](PicoCTF/Reversing/ARMssembly0.md)
-- [Use angr to crack password](DarkCTF2020/Reversing/JACK.md)
-- [Portable executable compiled with Cosmopolitain](https://rainbowpigeon.me/posts/pbctf-2021/#cosmo)
-- [In-memory loading technique](https://www.aperikube.fr/docs/dghack_2020/dharma_exe/)
-- [Arduino Intel HEX format](https://www.aperikube.fr/docs/dghack_2020/strange_thing/)
-- [Extract data from ELF](DGHack2021/Détection/YARA.md)
-- [Reverse OS launched with qemu](DGHack2021/Reverse/OSS117.md)
-- [Use gdb to debug child after fork](DGHack2021/Exploit/SMTP.md)
-- [vTable hook](https://www.aperikube.fr/docs/dghack_2021/introspection/)
-- [Example of reversing using OllyDbg and Ghidra](FCSC2022/Reverse/IconicLicense.md)
+
+### Python
+
 - [Python bytecode reverse](404CTF2022/Reverse/Tour.md#partie-2)
 - [PYC reverse](404CTF2022/Reverse/MaJ.md#pas-de-maj)
+
+### Assembly
+
+- [Assembly reversing](AUCTF2020/Reversing/PlainJane.md)
+- [ARMv8 assembly reversing](PicoCTF/Reversing/ARMssembly0.md)
+- [Portable executable compiled with Cosmopolitain](https://rainbowpigeon.me/posts/pbctf-2021/#cosmo)
+- [In-memory loading technique](https://www.aperikube.fr/docs/dghack_2020/dharma_exe/)
+- [vTable hook](https://www.aperikube.fr/docs/dghack_2021/introspection/)
+
+### Micro-controllers and circuits
+
+- [Arduino Intel HEX format](https://www.aperikube.fr/docs/dghack_2020/strange_thing/)
+
+### Other static analysis
+
+- [Extract data from ELF](DGHack2021/Détection/YARA.md)
+
+
+### Dynamic analysis
+
+- [Use angr to crack password](DarkCTF2020/Reversing/JACK.md)
+- [Use gdb to debug child after fork](DGHack2021/Exploit/SMTP.md)
+- [Reverse OS launched with qemu](DGHack2021/Reverse/OSS117.md)
+- [Example of reversing using OllyDbg and Ghidra](FCSC2022/Reverse/IconicLicense.md)
+- [Brute force password on Android app](404CTF2022/Reverse/FridaMe.md)
+
 
 ## Web
 
