@@ -249,6 +249,7 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 ### Micro-controllers and circuits
 
 - [Arduino Intel HEX format](https://www.aperikube.fr/docs/dghack_2020/strange_thing/)
+- [Logic gates](404CTF2022/Reverse/Portes.md)
 
 ### Other static analysis
 
