@@ -11,13 +11,13 @@ Je suis arrivé 5e (sur 944 participants) avec 1700 points.
 | Épreuve | Points | Catégorie |
 |:-------:|:------:|:---------:|
 | [Coffre-fort Secret](Dev/Coffre.md) | 50 | dev |
-| ASM ère | 200 | dev |
+| [ASM ère](Dev/ASM.md) | 200 | dev |
 | Piratecraft | 50 | Détection |
 | Curlify | 100 | Web |
 | Un chasseur sachant chasser 1 | 50 | Web |
 | Un chasseur sachant chasser 2 | 200 | Web |
 | Wanna more features | 50 | Reverse/Crackme |
-| Unserial killer | 200 | Web |
+| [Unserial killer](Web/Unserial.md) | 200 | Web |
 | Is it art | 42 | Stéganographie |
 | Sandchat | 200 | Système |
 | Shadow4DGA 1 | 50 | Détection |
