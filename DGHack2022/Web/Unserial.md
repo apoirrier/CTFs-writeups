@@ -427,3 +427,5 @@ O:22:"GuzzleHttp\Psr7\Stream":7:{s:30:"GuzzleHttp\Psr7\Streamstream";N;s:28:"Guz
 ```
 
 J'envoie ce payload sur le site et j'obtiens le flag !
+
+Flag: `DGHACK{D_Ont_M3sS_W1th_PhP_0bj3Ct5}`
