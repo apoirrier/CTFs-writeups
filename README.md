@@ -203,6 +203,7 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 ### Heap exploitation
 
 - [Reallocate chosen freed block from tcache](https://github.com/Dvd848/CTFs/blob/master/2021_picoCTF/Cache_Me_Outside.md)
+- [Use-after-free](DGHack2022/Systeme/Sandchat.md)
 
 ### Python
 
@@ -272,8 +273,8 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 - [PHP injection with eval used](AUCTF2020/Web/quick_maths.md)
 - [Exploit javascript equality check to bypass hash collision](AwesomeCTF2020/Web/C0llide.md)
 - [PHP deserialize](https://github.com/skyf0l/CTF/blob/master/PicoCTF2021/README.md#super-serial)
+- [Another PHP deserialize](DGHack2022/Web/Unserial.md)
 - [.Net core C# getters and setters exploits](https://dashboard.malice.fr/uploads/dghack/writeups/WriteUp_FlightControl.pdf)
-- 
 
 ### SQL attacks
 
