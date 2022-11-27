@@ -255,7 +255,7 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 ### Other static analysis
 
 - [Extract data from ELF](DGHack2021/Détection/YARA.md)
-
+- [Packed malware](DGHack2022/Reverse/HackTrick.md)
 
 ### Dynamic analysis
 

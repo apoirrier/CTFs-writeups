@@ -23,7 +23,7 @@ Je suis arrivé 5e (sur 944 participants) avec 1700 points.
 | Shadow4DGA 1 | 50 | Détection |
 | Shadow4DGA 2 | 100 | Détection |
 | Pas si chronophage | 100 | dev |
-| Hack Trick | 200 | Reverse |
+| [Hack Trick](Reverse/HackTrick.md) | 200 | Reverse |
 | Cryptobvious | 50 | Crypto |
 | Maillon faible | 100 | Crypto |
 | RSSSA | 100 | Crypto |
