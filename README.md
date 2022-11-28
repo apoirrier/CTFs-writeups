@@ -275,6 +275,7 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 - [PHP deserialize](https://github.com/skyf0l/CTF/blob/master/PicoCTF2021/README.md#super-serial)
 - [Another PHP deserialize](DGHack2022/Web/Unserial.md)
 - [.Net core C# getters and setters exploits](https://dashboard.malice.fr/uploads/dghack/writeups/WriteUp_FlightControl.pdf)
+- [PHP extract](DGHack2022/Web/Curlify.md)
 
 ### SQL attacks
 
