@@ -155,6 +155,7 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 - [Python bytecode](https://ypl.coffee/ractf-2020-puffer-overflow/)
 - [Create Signal with a given frequency](FCSC2022/Hardware/MommyMorse.md)
 - [Homoglyphes](404CTF2022/Programmation/DonneesCorrompues.md)
+- [Reverse gzdeflate](DGHack2022/Detection/Shadow4DGA.md#première-partie)
 
 ## OSINT
 
