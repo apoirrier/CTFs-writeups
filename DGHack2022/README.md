@@ -22,7 +22,7 @@ Je suis arrivé 5e (sur 944 participants) avec 1700 points.
 | [Sandchat](Systeme/Sandchat.md) | 200 | Système |
 | [Shadow4DGA 1](Detection/Shadow4DGA.md) | 50 | Détection |
 | [Shadow4DGA 2](Detection/Shadow4DGA.md#seconde-partie) | 100 | Détection |
-| Pas si chronophage | 100 | dev |
+| [Pas si chronophage](Dev/Chronophage.md) | 100 | dev |
 | [Hack Trick](Reverse/HackTrick.md) | 200 | Reverse |
 | Cryptobvious | 50 | Crypto |
 | Maillon faible | 100 | Crypto |
