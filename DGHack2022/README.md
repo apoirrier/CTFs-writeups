@@ -29,7 +29,7 @@ Je suis arrivé 5e (sur 944 participants) avec 1700 points.
 | RSSSA | 100 | Crypto |
 | Pas un bon nom | 50 | Forensics |
 | Ne jamais renoncer | 50 | Stéganographie |
-| Vivre pas cher | 100 | Forensics |
+| [Vivre pas cher](Forensics/VivrePasCher.md) | 100 | Forensics |
 | Ministry of catapult | 100 | Forensics |
 | Shiftdows | 100 | Forensics |
 | Buffoid | 200 | Exploit |
