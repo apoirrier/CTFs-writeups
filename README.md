@@ -125,6 +125,7 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 - [Windows recurring task](DGHack2021/Inforensique/iDisk.md)
 - [Repair RAID files](404CTF2022/Forensics/RAID.md)
 - [Backdoor in service (systemd)](DGHack2022/Forensics/VivrePasCher.md)
+- [ELF Core dump](DGHack2022/Forensics/Catapult.md)
 
 ### Signal in a wire
 
@@ -158,6 +159,7 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 - [Homoglyphes](404CTF2022/Programmation/DonneesCorrompues.md)
 - [Reverse gzdeflate](DGHack2022/Detection/Shadow4DGA.md#première-partie)
 - [Captcha brute force](DGHack2022/Dev/Chronophage.md)
+- [Become root in VM](DGHack2022/Forensics/Catapult.md)
 
 ## OSINT
 
