@@ -144,7 +144,7 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 - [Color hex values](TJCTF2020/Forensics/Hexillogy.md)
 - [Sound keylogger](PBCTF2021/Misc/GhostWriter.md)
 - [Elastic search](DGHack2021/Détection/MEGACORP.md)
-
+- [Log4Shell](DGHack2022/Detection/Piratecraft.md)
 
 ## Games
 
