@@ -14,9 +14,9 @@ Je suis arrivé 5e (sur 944 participants) avec 1700 points.
 | [ASM ère](Dev/ASM.md) | 200 | dev |
 | [Piratecraft](Detection/Piratecraft.md) | 50 | Détection |
 | [Curlify](Web/Curlify.md) | 100 | Web |
-| Un chasseur sachant chasser 1 | 50 | Web |
+| [Un chasseur sachant chasser 1](Web/Chasseur.md) | 50 | Web |
 | Un chasseur sachant chasser 2 | 200 | Web |
-| Wanna more features | 50 | Reverse/Crackme |
+| [Wanna more features](Reverse/WannaMore.md) | 50 | Reverse/Crackme |
 | [Unserial killer](Web/Unserial.md) | 200 | Web |
 | Is it art | 42 | Stéganographie |
 | [Sandchat](Systeme/Sandchat.md) | 200 | Système |
@@ -27,7 +27,7 @@ Je suis arrivé 5e (sur 944 participants) avec 1700 points.
 | Cryptobvious | 50 | Crypto |
 | Maillon faible | 100 | Crypto |
 | RSSSA | 100 | Crypto |
-| Pas un bon nom | 50 | Forensics |
+| [Pas un bon nom](Forensics/PasBonNom.md) | 50 | Forensics |
 | Ne jamais renoncer | 50 | Stéganographie |
 | [Vivre pas cher](Forensics/VivrePasCher.md) | 100 | Forensics |
 | [Ministry of catapult](Forensics/Catapult.md) | 100 | Forensics |
