@@ -204,6 +204,7 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 - [Privilege escalation on Linux machine, exit rbash](BrigitteFriang/AloneMusk.md)
 - [Open tty shell to exploit less for privilege escalation](DGHack2021/Exploit/SMTP.md)
 - [Read file in restricted bash](404CTF2022/Misc/Suspicieux.md#partie-2)
+- [Read execute-only binary with LD_PRELOAD](DGHack2022/Reverse/WannaMore.md)
 
 ### Heap exploitation
 
