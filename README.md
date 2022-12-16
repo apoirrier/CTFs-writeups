@@ -70,10 +70,12 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 - [ElGamal signature scheme without hash existential forgery](CSAWQual2021/crypto/Forgery.md)
 - [Break DH key exchange with Pohlig-Hellman attack for DLP](TJCTF2020/Cryptography/DifficultDecryption.md)
 - [Oracle for finding secret exponent](404CTF2022/Crypto/DegatsCollateraux.md)
+- [Shamir polynomial with linked coefficients](https://remyoudompheng.github.io/ctf/dghack2022/rsssa.html)
 
 ### Elliptic curves
 
 - [CRT on EC points](BrigitteFriang/VXElliptique.md)
+- [Nonce reuse in ECDSA signature](https://eshard.com/posts/dghack-maillonfaible)
 
 ### Bad randomness
 - [Retrieve state of java.util.Random PRNG](SharkyCTF2020/Crypto/Casino.md)
@@ -99,6 +101,7 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 - [Hidden flag in PNG (zsteg)](https://github.com/xnomas/PicoCTF-2021-Writeups/tree/main/Milkslap)
 - [Hidden flag in scanline filter of PNG](404CTF2022/Stegano/PNG.md)
 - [Code128](404CTF2022/Programmation/128code128.md)
+- [Piet](https://gitlab.com/ctfun/ctf-writeups/-/blob/master/dghack2022/stegano/Ne%20Jamais%20Renoncer/Ne%20Jamais%20Renoncer.md)
 
 ### Audio
 
@@ -326,7 +329,7 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 - [Apache CVE example](https://nicolasb.fr/blog/writeup-dghack-walters-blog/)
 - [Gitlab CVE example](https://github.com/l4u23n7p/dghack-2020/tree/main/gitbad)
 - [Laravel (PHP) LFI leading to RCE due to CVE in dependency](https://writeup.wh1t3r0s3.xyz/web/instakilogram-200-points)
-
+- [RCE on Covenant](https://xthaz.fr/posts/dghack/)
 
 # Tools for CTF
 Here is a list to various useful tools for CTF competitions.
