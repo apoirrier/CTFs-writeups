@@ -14,7 +14,7 @@ N'ayant découvert la compétition que les derniers jours, je n'ai pas eu le tem
 | Fly Away | 100 | Misc |
 | Babel | 100 | Misc |
 | [DumpCyber](Forensics/DumpCyber.md) | 100 | Forensics |
-| Moth | 100 | Reverse |
+| [Moth](Reverse/Moth.md) | 100 | Reverse |
 | Spaceships | 232 | Reverse |
 | InteractiveReverse | 384 | Reverse |
 | Kaleidoscope | 473 | Reverse |

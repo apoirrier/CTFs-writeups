@@ -267,9 +267,14 @@ You can also find a [list of useful CTF tools](#tools-for-ctf).
 - [Extract data from ELF](DGHack2021/Détection/YARA.md)
 - [Packed malware](DGHack2022/Reverse/HackTrick.md)
 
-### Dynamic analysis
+### Static analysis
 
 - [Use angr to crack password](DarkCTF2020/Reversing/JACK.md)
+- [Use claripy to solve a set of constraints](ECW2023/Reverse/Moth.md)
+
+
+### Dynamic analysis
+
 - [Use gdb to debug child after fork](DGHack2021/Exploit/SMTP.md)
 - [Reverse OS launched with qemu](DGHack2021/Reverse/OSS117.md)
 - [Example of reversing using OllyDbg and Ghidra](FCSC2022/Reverse/IconicLicense.md)
